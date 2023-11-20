@@ -26,6 +26,25 @@ github.com/PuerkitoBio/purell
 # github.com/PuerkitoBio/urlesc v0.0.0-20170810143723-de5bf2ad4578
 ## explicit
 github.com/PuerkitoBio/urlesc
+# github.com/Yangfisher1/opencensus-go v0.0.0-20231120012905-202067ca7b1b
+## explicit; go 1.13
+github.com/Yangfisher1/opencensus-go
+github.com/Yangfisher1/opencensus-go/internal
+github.com/Yangfisher1/opencensus-go/internal/tagencoding
+github.com/Yangfisher1/opencensus-go/metric/metricdata
+github.com/Yangfisher1/opencensus-go/metric/metricproducer
+github.com/Yangfisher1/opencensus-go/plugin/ochttp
+github.com/Yangfisher1/opencensus-go/plugin/ochttp/propagation/b3
+github.com/Yangfisher1/opencensus-go/plugin/ochttp/propagation/tracecontext
+github.com/Yangfisher1/opencensus-go/resource
+github.com/Yangfisher1/opencensus-go/stats
+github.com/Yangfisher1/opencensus-go/stats/internal
+github.com/Yangfisher1/opencensus-go/stats/view
+github.com/Yangfisher1/opencensus-go/tag
+github.com/Yangfisher1/opencensus-go/trace
+github.com/Yangfisher1/opencensus-go/trace/internal
+github.com/Yangfisher1/opencensus-go/trace/propagation
+github.com/Yangfisher1/opencensus-go/trace/tracestate
 # github.com/beorn7/perks v1.0.1
 ## explicit; go 1.11
 github.com/beorn7/perks/quantile

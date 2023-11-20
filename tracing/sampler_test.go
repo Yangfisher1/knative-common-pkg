@@ -21,7 +21,7 @@ import (
 	"testing"
 
 	"github.com/Yangfisher1/knative-common-pkg/tracing/config"
-	"go.opencensus.io/trace"
+	"github.com/Yangfisher1/opencensus-go/trace"
 )
 
 func TestCreateOCTConfig(t *testing.T) {

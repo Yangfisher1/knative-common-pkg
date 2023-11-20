@@ -20,8 +20,8 @@ import (
 	"net/http"
 
 	"github.com/Yangfisher1/knative-common-pkg/tracing/propagation/tracecontextb3"
-	"go.opencensus.io/plugin/ochttp"
-	"go.opencensus.io/trace"
+	"github.com/Yangfisher1/opencensus-go/plugin/ochttp"
+	"github.com/Yangfisher1/opencensus-go/trace"
 	"k8s.io/apimachinery/pkg/util/sets"
 )
 

@@ -18,9 +18,9 @@ package tracing
 
 import (
 	"contrib.go.opencensus.io/exporter/zipkin"
+	"github.com/Yangfisher1/opencensus-go/trace"
 	zipkinmodel "github.com/openzipkin/zipkin-go/model"
 	zipkinreporter "github.com/openzipkin/zipkin-go/reporter"
-	"go.opencensus.io/trace"
 
 	"github.com/Yangfisher1/knative-common-pkg/tracing/config"
 )

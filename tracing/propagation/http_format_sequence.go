@@ -19,8 +19,8 @@ package propagation
 import (
 	"net/http"
 
-	"go.opencensus.io/trace"
-	"go.opencensus.io/trace/propagation"
+	"github.com/Yangfisher1/opencensus-go/trace"
+	"github.com/Yangfisher1/opencensus-go/trace/propagation"
 )
 
 // HTTPFormatSequence is a propagation.HTTPFormat that applies multiple other propagation formats.

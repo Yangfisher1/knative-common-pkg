@@ -25,9 +25,9 @@ import (
 	"sync"
 
 	oczipkin "contrib.go.opencensus.io/exporter/zipkin"
+	"github.com/Yangfisher1/opencensus-go/trace"
 	"github.com/openzipkin/zipkin-go"
 	httpreporter "github.com/openzipkin/zipkin-go/reporter/http"
-	"go.opencensus.io/trace"
 	"go.uber.org/zap"
 
 	"github.com/Yangfisher1/knative-common-pkg/tracing/config"

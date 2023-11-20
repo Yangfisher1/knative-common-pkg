@@ -18,9 +18,9 @@ package tracecontextb3
 
 import (
 	"github.com/Yangfisher1/knative-common-pkg/tracing/propagation"
-	"go.opencensus.io/plugin/ochttp/propagation/b3"
-	"go.opencensus.io/plugin/ochttp/propagation/tracecontext"
-	ocpropagation "go.opencensus.io/trace/propagation"
+	"github.com/Yangfisher1/opencensus-go/plugin/ochttp/propagation/b3"
+	"github.com/Yangfisher1/opencensus-go/plugin/ochttp/propagation/tracecontext"
+	ocpropagation "github.com/Yangfisher1/opencensus-go/trace/propagation"
 )
 
 // TraceContextB3Egress is a propagation.HTTPFormat that reads both TraceContext and B3 tracing
