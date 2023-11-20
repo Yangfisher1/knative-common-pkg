@@ -21,7 +21,7 @@ import (
 
 	"k8s.io/client-go/rest"
 
-	"knative.dev/pkg/controller"
+	"github.com/Yangfisher1/knative-common-pkg/controller"
 )
 
 // InformerInjector holds the type of a callback that attaches a particular

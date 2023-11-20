@@ -19,6 +19,11 @@ package configmap
 import (
 	"context"
 
+	"github.com/Yangfisher1/knative-common-pkg/client/injection/kube/client"
+	"github.com/Yangfisher1/knative-common-pkg/controller"
+	"github.com/Yangfisher1/knative-common-pkg/injection"
+	"github.com/Yangfisher1/knative-common-pkg/injection/clients/namespacedkube/informers/factory"
+	"github.com/Yangfisher1/knative-common-pkg/logging"
 	apicorev1 "k8s.io/api/core/v1"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/apimachinery/pkg/labels"
@@ -26,11 +31,6 @@ import (
 	kubernetes "k8s.io/client-go/kubernetes"
 	corev1 "k8s.io/client-go/listers/core/v1"
 	"k8s.io/client-go/tools/cache"
-	"knative.dev/pkg/client/injection/kube/client"
-	"knative.dev/pkg/controller"
-	"knative.dev/pkg/injection"
-	"knative.dev/pkg/injection/clients/namespacedkube/informers/factory"
-	"knative.dev/pkg/logging"
 )
 
 func init() {

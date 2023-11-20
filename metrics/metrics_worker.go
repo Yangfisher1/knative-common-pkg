@@ -19,9 +19,9 @@ package metrics
 import (
 	"context"
 
+	"github.com/Yangfisher1/knative-common-pkg/logging"
 	"go.opencensus.io/stats/view"
 	"go.uber.org/zap"
-	"knative.dev/pkg/logging"
 )
 
 type metricsWorker struct {

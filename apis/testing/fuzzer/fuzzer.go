@@ -20,11 +20,11 @@ import (
 	"math/rand"
 	"net/url"
 
+	"github.com/Yangfisher1/knative-common-pkg/apis"
 	fuzz "github.com/google/gofuzz"
 	corev1 "k8s.io/api/core/v1"
 	"k8s.io/apimachinery/pkg/api/apitesting/fuzzer"
 	"k8s.io/apimachinery/pkg/runtime/serializer"
-	"knative.dev/pkg/apis"
 )
 
 // Funcs includes fuzzing funcs for knative.dev/serving types
@@ -54,16 +54,16 @@ var Funcs = fuzzer.MergeFuzzerFuncs(
 // Consumers should initialize their conditions prior to fuzzing them.
 // For example:
 //
-// func(s *SomeStatus, c fuzz.Continue) {
-//   c.FuzzNoCustom(s) // fuzz the status object
+//	func(s *SomeStatus, c fuzz.Continue) {
+//	  c.FuzzNoCustom(s) // fuzz the status object
 //
-//   // Clear the random fuzzed condition
-//   s.Status.SetConditions(nil)
+//	  // Clear the random fuzzed condition
+//	  s.Status.SetConditions(nil)
 //
-//   // Fuzz the known conditions except their type value
-//   s.InitializeConditions()
-//   fuzz.Conditions(&s.Status, c)
-// }
+//	  // Fuzz the known conditions except their type value
+//	  s.InitializeConditions()
+//	  fuzz.Conditions(&s.Status, c)
+//	}
 func FuzzConditions(accessor apis.ConditionsAccessor, c fuzz.Continue) {
 	conds := accessor.GetConditions()
 	for i, cond := range conds {

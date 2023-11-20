@@ -19,8 +19,8 @@ package v1beta1
 import (
 	"testing"
 
-	"knative.dev/pkg/apis/duck"
-	"knative.dev/pkg/apis/duck/ducktypes"
+	"github.com/Yangfisher1/knative-common-pkg/apis/duck"
+	"github.com/Yangfisher1/knative-common-pkg/apis/duck/ducktypes"
 )
 
 func TestTypesImplements(t *testing.T) {

@@ -12,9 +12,9 @@ are as follows:
 
 | Label                               | Duck-Type                                                                     |
 | ----------------------------------- | ----------------------------------------------------------------------------- |
-| `duck.knative.dev/addressable=true` | [Addressable](https://godoc.org/knative.dev/pkg/apis/duck/v1#AddressableType) |
-| `duck.knative.dev/binding=true`     | [Binding](https://godoc.org/knative.dev/pkg/apis/duck/v1alpha1#Binding)       |
-| `duck.knative.dev/source=true`      | [Source](https://godoc.org/knative.dev/pkg/apis/duck/v1#Source)               |
+| `duck.knative.dev/addressable=true` | [Addressable](https://godoc.org/github.com/Yangfisher1/knative-common-pkg/apis/duck/v1#AddressableType) |
+| `duck.knative.dev/binding=true`     | [Binding](https://godoc.org/github.com/Yangfisher1/knative-common-pkg/apis/duck/v1alpha1#Binding)       |
+| `duck.knative.dev/source=true`      | [Source](https://godoc.org/github.com/Yangfisher1/knative-common-pkg/apis/duck/v1#Source)               |
 
 ## Addressable Shape
 

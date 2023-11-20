@@ -25,7 +25,7 @@ import (
 
 	"go.opencensus.io/stats/view"
 
-	"knative.dev/pkg/metrics/metricstest"
+	"github.com/Yangfisher1/knative-common-pkg/metrics/metricstest"
 )
 
 func TestMemStatsMetrics(t *testing.T) {

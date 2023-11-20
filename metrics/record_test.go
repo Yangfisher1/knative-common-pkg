@@ -21,8 +21,8 @@ import (
 	"fmt"
 	"testing"
 
-	"knative.dev/pkg/metrics/metricskey"
-	"knative.dev/pkg/metrics/metricstest"
+	"github.com/Yangfisher1/knative-common-pkg/metrics/metricskey"
+	"github.com/Yangfisher1/knative-common-pkg/metrics/metricstest"
 
 	"github.com/google/go-cmp/cmp"
 	"go.opencensus.io/resource"

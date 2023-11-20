@@ -25,8 +25,8 @@ import (
 	"golang.org/x/net/context"
 	"k8s.io/client-go/util/workqueue"
 
-	"knative.dev/pkg/logging"
-	"knative.dev/pkg/metrics/metricstest"
+	"github.com/Yangfisher1/knative-common-pkg/logging"
+	"github.com/Yangfisher1/knative-common-pkg/metrics/metricstest"
 )
 
 func newInt64(name string) *stats.Int64Measure {

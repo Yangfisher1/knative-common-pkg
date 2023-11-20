@@ -23,6 +23,15 @@ import (
 	"sort"
 	"strings"
 
+	"github.com/Yangfisher1/knative-common-pkg/apis/duck"
+	duckv1 "github.com/Yangfisher1/knative-common-pkg/apis/duck/v1"
+	"github.com/Yangfisher1/knative-common-pkg/controller"
+	"github.com/Yangfisher1/knative-common-pkg/logging"
+	"github.com/Yangfisher1/knative-common-pkg/ptr"
+	pkgreconciler "github.com/Yangfisher1/knative-common-pkg/reconciler"
+	"github.com/Yangfisher1/knative-common-pkg/system"
+	"github.com/Yangfisher1/knative-common-pkg/webhook"
+	certresources "github.com/Yangfisher1/knative-common-pkg/webhook/certificates/resources"
 	"github.com/gobuffalo/flect"
 	"go.uber.org/zap"
 	admissionv1 "k8s.io/api/admission/v1"
@@ -35,15 +44,6 @@ import (
 	"k8s.io/client-go/kubernetes"
 	admissionlisters "k8s.io/client-go/listers/admissionregistration/v1"
 	corelisters "k8s.io/client-go/listers/core/v1"
-	"knative.dev/pkg/apis/duck"
-	duckv1 "knative.dev/pkg/apis/duck/v1"
-	"knative.dev/pkg/controller"
-	"knative.dev/pkg/logging"
-	"knative.dev/pkg/ptr"
-	pkgreconciler "knative.dev/pkg/reconciler"
-	"knative.dev/pkg/system"
-	"knative.dev/pkg/webhook"
-	certresources "knative.dev/pkg/webhook/certificates/resources"
 )
 
 // ReconcilerOption is a function to modify the Reconciler.

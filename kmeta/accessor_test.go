@@ -24,7 +24,7 @@ import (
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/client-go/tools/cache"
 
-	. "knative.dev/pkg/testing"
+	. "github.com/Yangfisher1/knative-common-pkg/testing"
 )
 
 // Ensure our resource satisfies the interface.

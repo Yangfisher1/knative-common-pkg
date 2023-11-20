@@ -75,18 +75,18 @@ func (g *fakeFilteredFactoryGenerator) GenerateType(c *generator.Context, t *typ
 		"informersWithNamespace":                       c.Universe.Function(types.Name{Package: g.sharedInformerFactoryPackage, Name: "WithNamespace"}),
 		"informersWithTweakListOptions":                c.Universe.Function(types.Name{Package: g.sharedInformerFactoryPackage, Name: "WithTweakListOptions"}),
 		"injectionRegisterInformerFactory": c.Universe.Function(types.Name{
-			Package: "knative.dev/pkg/injection",
+			Package: "github.com/Yangfisher1/knative-common-pkg/injection",
 			Name:    "Fake.RegisterInformerFactory",
 		}),
-		"injectionHasNamespace":     c.Universe.Type(types.Name{Package: "knative.dev/pkg/injection", Name: "HasNamespaceScope"}),
-		"injectionGetNamespace":     c.Universe.Type(types.Name{Package: "knative.dev/pkg/injection", Name: "GetNamespaceScope"}),
-		"controllerGetResyncPeriod": c.Universe.Type(types.Name{Package: "knative.dev/pkg/controller", Name: "GetResyncPeriod"}),
+		"injectionHasNamespace":     c.Universe.Type(types.Name{Package: "github.com/Yangfisher1/knative-common-pkg/injection", Name: "HasNamespaceScope"}),
+		"injectionGetNamespace":     c.Universe.Type(types.Name{Package: "github.com/Yangfisher1/knative-common-pkg/injection", Name: "GetNamespaceScope"}),
+		"controllerGetResyncPeriod": c.Universe.Type(types.Name{Package: "github.com/Yangfisher1/knative-common-pkg/controller", Name: "GetResyncPeriod"}),
 		"contextContext": c.Universe.Type(types.Name{
 			Package: "context",
 			Name:    "Context",
 		}),
 		"loggingFromContext": c.Universe.Function(types.Name{
-			Package: "knative.dev/pkg/logging",
+			Package: "github.com/Yangfisher1/knative-common-pkg/logging",
 			Name:    "FromContext",
 		}),
 		"metav1ListOptions": c.Universe.Type(types.Name{

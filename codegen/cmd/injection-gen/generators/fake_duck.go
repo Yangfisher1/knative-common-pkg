@@ -85,7 +85,7 @@ func (g *fakeDuckGenerator) GenerateType(c *generator.Context, t *types.Type, w 
 		"type":     t,
 		"version":  namer.IC(g.groupVersion.Version.String()),
 		"injectionRegisterDuck": c.Universe.Function(types.Name{
-			Package: "knative.dev/pkg/injection",
+			Package: "github.com/Yangfisher1/knative-common-pkg/injection",
 			Name:    "Fake.RegisterDuck",
 		}),
 	}

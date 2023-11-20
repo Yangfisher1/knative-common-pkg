@@ -21,10 +21,10 @@ package fake
 import (
 	context "context"
 
-	storageversion "knative.dev/pkg/client/injection/kube/informers/apiserverinternal/v1alpha1/storageversion"
-	fake "knative.dev/pkg/client/injection/kube/informers/factory/fake"
-	controller "knative.dev/pkg/controller"
-	injection "knative.dev/pkg/injection"
+	storageversion "github.com/Yangfisher1/knative-common-pkg/client/injection/kube/informers/apiserverinternal/v1alpha1/storageversion"
+	fake "github.com/Yangfisher1/knative-common-pkg/client/injection/kube/informers/factory/fake"
+	controller "github.com/Yangfisher1/knative-common-pkg/controller"
+	injection "github.com/Yangfisher1/knative-common-pkg/injection"
 )
 
 var Get = storageversion.Get

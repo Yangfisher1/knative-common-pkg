@@ -21,9 +21,9 @@ import (
 	"testing"
 	"time"
 
-	kubeclient "knative.dev/pkg/client/injection/kube/client/fake"
-	_ "knative.dev/pkg/injection/clients/namespacedkube/informers/core/v1/secret/fake"
-	pkgreconciler "knative.dev/pkg/reconciler"
+	kubeclient "github.com/Yangfisher1/knative-common-pkg/client/injection/kube/client/fake"
+	_ "github.com/Yangfisher1/knative-common-pkg/injection/clients/namespacedkube/informers/core/v1/secret/fake"
+	pkgreconciler "github.com/Yangfisher1/knative-common-pkg/reconciler"
 
 	admissionregistrationv1 "k8s.io/api/admissionregistration/v1"
 	corev1 "k8s.io/api/core/v1"
@@ -34,16 +34,16 @@ import (
 	"k8s.io/apimachinery/pkg/util/wait"
 	clientgotesting "k8s.io/client-go/testing"
 
-	"knative.dev/pkg/configmap"
-	"knative.dev/pkg/controller"
-	"knative.dev/pkg/ptr"
-	"knative.dev/pkg/system"
-	"knative.dev/pkg/webhook"
-	certresources "knative.dev/pkg/webhook/certificates/resources"
-	"knative.dev/pkg/webhook/resourcesemantics"
+	"github.com/Yangfisher1/knative-common-pkg/configmap"
+	"github.com/Yangfisher1/knative-common-pkg/controller"
+	"github.com/Yangfisher1/knative-common-pkg/ptr"
+	"github.com/Yangfisher1/knative-common-pkg/system"
+	"github.com/Yangfisher1/knative-common-pkg/webhook"
+	certresources "github.com/Yangfisher1/knative-common-pkg/webhook/certificates/resources"
+	"github.com/Yangfisher1/knative-common-pkg/webhook/resourcesemantics"
 
-	. "knative.dev/pkg/reconciler/testing"
-	. "knative.dev/pkg/webhook/testing"
+	. "github.com/Yangfisher1/knative-common-pkg/reconciler/testing"
+	. "github.com/Yangfisher1/knative-common-pkg/webhook/testing"
 )
 
 func TestReconcile(t *testing.T) {

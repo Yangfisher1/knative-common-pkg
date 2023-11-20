@@ -22,16 +22,16 @@ import (
 	"strings"
 	"testing"
 
+	"github.com/Yangfisher1/knative-common-pkg/system"
+	pkgtest "github.com/Yangfisher1/knative-common-pkg/testing"
 	"github.com/google/go-cmp/cmp"
 	"github.com/google/go-cmp/cmp/cmpopts"
 	jsonpatch "gomodules.xyz/jsonpatch/v2"
 	admissionv1 "k8s.io/api/admission/v1"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
-	"knative.dev/pkg/system"
-	pkgtest "knative.dev/pkg/testing"
 
 	// Makes system.Namespace work in tests.
-	_ "knative.dev/pkg/system/testing"
+	_ "github.com/Yangfisher1/knative-common-pkg/system/testing"
 )
 
 // CreateResource creates a testing.Resource with the given name in the system namespace.

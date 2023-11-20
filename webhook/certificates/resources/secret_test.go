@@ -19,7 +19,7 @@ package resources
 import (
 	"testing"
 
-	. "knative.dev/pkg/logging/testing"
+	. "github.com/Yangfisher1/knative-common-pkg/logging/testing"
 )
 
 func TestMakeSecret(t *testing.T) {

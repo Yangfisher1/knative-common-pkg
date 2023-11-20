@@ -20,6 +20,14 @@ import (
 	"context"
 	"fmt"
 
+	"github.com/Yangfisher1/knative-common-pkg/controller"
+	"github.com/Yangfisher1/knative-common-pkg/kmp"
+	"github.com/Yangfisher1/knative-common-pkg/logging"
+	"github.com/Yangfisher1/knative-common-pkg/ptr"
+	pkgreconciler "github.com/Yangfisher1/knative-common-pkg/reconciler"
+	"github.com/Yangfisher1/knative-common-pkg/system"
+	"github.com/Yangfisher1/knative-common-pkg/webhook"
+	certresources "github.com/Yangfisher1/knative-common-pkg/webhook/certificates/resources"
 	"go.uber.org/zap"
 	apixv1 "k8s.io/apiextensions-apiserver/pkg/apis/apiextensions/v1"
 	apixclient "k8s.io/apiextensions-apiserver/pkg/client/clientset/clientset"
@@ -28,14 +36,6 @@ import (
 	"k8s.io/apimachinery/pkg/runtime/schema"
 	"k8s.io/apimachinery/pkg/types"
 	corelisters "k8s.io/client-go/listers/core/v1"
-	"knative.dev/pkg/controller"
-	"knative.dev/pkg/kmp"
-	"knative.dev/pkg/logging"
-	"knative.dev/pkg/ptr"
-	pkgreconciler "knative.dev/pkg/reconciler"
-	"knative.dev/pkg/system"
-	"knative.dev/pkg/webhook"
-	certresources "knative.dev/pkg/webhook/certificates/resources"
 )
 
 type reconciler struct {

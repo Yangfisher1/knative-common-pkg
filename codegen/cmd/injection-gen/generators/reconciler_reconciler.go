@@ -80,19 +80,19 @@ func (g *reconcilerReconcilerGenerator) GenerateType(c *generator.Context, t *ty
 		"hasStatus":     g.hasStatus,
 		"nonNamespaced": g.nonNamespaced,
 		"controllerImpl": c.Universe.Type(types.Name{
-			Package: "knative.dev/pkg/controller",
+			Package: "github.com/Yangfisher1/knative-common-pkg/controller",
 			Name:    "Impl",
 		}),
 		"controllerReconciler": c.Universe.Type(types.Name{
-			Package: "knative.dev/pkg/controller",
+			Package: "github.com/Yangfisher1/knative-common-pkg/controller",
 			Name:    "Reconciler",
 		}),
 		"controllerWithEventRecorder": c.Universe.Type(types.Name{
-			Package: "knative.dev/pkg/controller",
+			Package: "github.com/Yangfisher1/knative-common-pkg/controller",
 			Name:    "WithEventRecorder",
 		}),
 		"controllerNewSkipKey": c.Universe.Type(types.Name{
-			Package: "knative.dev/pkg/controller",
+			Package: "github.com/Yangfisher1/knative-common-pkg/controller",
 			Name:    "NewSkipKey",
 		}),
 		"corev1EventSource": c.Universe.Function(types.Name{
@@ -107,11 +107,11 @@ func (g *reconcilerReconcilerGenerator) GenerateType(c *generator.Context, t *ty
 			Package: "k8s.io/api/core/v1",
 			Name:    "EventTypeWarning",
 		}),
-		"reconcilerEvent":                c.Universe.Type(types.Name{Package: "knative.dev/pkg/reconciler", Name: "Event"}),
-		"reconcilerReconcilerEvent":      c.Universe.Type(types.Name{Package: "knative.dev/pkg/reconciler", Name: "ReconcilerEvent"}),
-		"reconcilerRetryUpdateConflicts": c.Universe.Function(types.Name{Package: "knative.dev/pkg/reconciler", Name: "RetryUpdateConflicts"}),
-		"reconcilerConfigStore":          c.Universe.Type(types.Name{Name: "ConfigStore", Package: "knative.dev/pkg/reconciler"}),
-		"reconcilerOnDeletionInterface":  c.Universe.Type(types.Name{Package: "knative.dev/pkg/reconciler", Name: "OnDeletionInterface"}),
+		"reconcilerEvent":                c.Universe.Type(types.Name{Package: "github.com/Yangfisher1/knative-common-pkg/reconciler", Name: "Event"}),
+		"reconcilerReconcilerEvent":      c.Universe.Type(types.Name{Package: "github.com/Yangfisher1/knative-common-pkg/reconciler", Name: "ReconcilerEvent"}),
+		"reconcilerRetryUpdateConflicts": c.Universe.Function(types.Name{Package: "github.com/Yangfisher1/knative-common-pkg/reconciler", Name: "RetryUpdateConflicts"}),
+		"reconcilerConfigStore":          c.Universe.Type(types.Name{Name: "ConfigStore", Package: "github.com/Yangfisher1/knative-common-pkg/reconciler"}),
+		"reconcilerOnDeletionInterface":  c.Universe.Type(types.Name{Package: "github.com/Yangfisher1/knative-common-pkg/reconciler", Name: "OnDeletionInterface"}),
 		// Deps
 		"clientsetInterface": c.Universe.Type(types.Name{Name: "Interface", Package: g.clientsetPkg}),
 		"resourceLister":     c.Universe.Type(types.Name{Name: g.listerName, Package: g.listerPkg}),
@@ -119,7 +119,7 @@ func (g *reconcilerReconcilerGenerator) GenerateType(c *generator.Context, t *ty
 		"recordEventRecorder": c.Universe.Type(types.Name{Name: "EventRecorder", Package: "k8s.io/client-go/tools/record"}),
 		// methods
 		"loggingFromContext": c.Universe.Function(types.Name{
-			Package: "knative.dev/pkg/logging",
+			Package: "github.com/Yangfisher1/knative-common-pkg/logging",
 			Name:    "FromContext",
 		}),
 		"cacheSplitMetaNamespaceKey": c.Universe.Function(types.Name{
@@ -155,7 +155,7 @@ func (g *reconcilerReconcilerGenerator) GenerateType(c *generator.Context, t *ty
 			Name:    "NewString",
 		}),
 		"controllerOptions": c.Universe.Type(types.Name{
-			Package: "knative.dev/pkg/controller",
+			Package: "github.com/Yangfisher1/knative-common-pkg/controller",
 			Name:    "Options",
 		}),
 		"contextContext": c.Universe.Type(types.Name{
@@ -163,7 +163,7 @@ func (g *reconcilerReconcilerGenerator) GenerateType(c *generator.Context, t *ty
 			Name:    "Context",
 		}),
 		"kmpSafeDiff": c.Universe.Function(types.Name{
-			Package: "knative.dev/pkg/kmp",
+			Package: "github.com/Yangfisher1/knative-common-pkg/kmp",
 			Name:    "SafeDiff",
 		}),
 		"fmtErrorf":           c.Universe.Package("fmt").Function("Errorf"),
@@ -175,15 +175,15 @@ func (g *reconcilerReconcilerGenerator) GenerateType(c *generator.Context, t *ty
 			Name:    "RWMutex",
 		}),
 		"reconcilerLeaderAware": c.Universe.Type(types.Name{
-			Package: "knative.dev/pkg/reconciler",
+			Package: "github.com/Yangfisher1/knative-common-pkg/reconciler",
 			Name:    "LeaderAware",
 		}),
 		"reconcilerLeaderAwareFuncs": c.Universe.Type(types.Name{
-			Package: "knative.dev/pkg/reconciler",
+			Package: "github.com/Yangfisher1/knative-common-pkg/reconciler",
 			Name:    "LeaderAwareFuncs",
 		}),
 		"reconcilerBucket": c.Universe.Type(types.Name{
-			Package: "knative.dev/pkg/reconciler",
+			Package: "github.com/Yangfisher1/knative-common-pkg/reconciler",
 			Name:    "Bucket",
 		}),
 		"typesNamespacedName": c.Universe.Type(types.Name{
@@ -195,23 +195,23 @@ func (g *reconcilerReconcilerGenerator) GenerateType(c *generator.Context, t *ty
 			Name:    "Everything",
 		}),
 		"doReconcileKind": c.Universe.Type(types.Name{
-			Package: "knative.dev/pkg/reconciler",
+			Package: "github.com/Yangfisher1/knative-common-pkg/reconciler",
 			Name:    "DoReconcileKind",
 		}),
 		"doObserveKind": c.Universe.Type(types.Name{
-			Package: "knative.dev/pkg/reconciler",
+			Package: "github.com/Yangfisher1/knative-common-pkg/reconciler",
 			Name:    "DoObserveKind",
 		}),
 		"doFinalizeKind": c.Universe.Type(types.Name{
-			Package: "knative.dev/pkg/reconciler",
+			Package: "github.com/Yangfisher1/knative-common-pkg/reconciler",
 			Name:    "DoFinalizeKind",
 		}),
 		"controllerIsSkipKey": c.Universe.Function(types.Name{
-			Package: "knative.dev/pkg/controller",
+			Package: "github.com/Yangfisher1/knative-common-pkg/controller",
 			Name:    "IsSkipKey",
 		}),
 		"controllerIsRequeueKey": c.Universe.Function(types.Name{
-			Package: "knative.dev/pkg/controller",
+			Package: "github.com/Yangfisher1/knative-common-pkg/controller",
 			Name:    "IsRequeueKey",
 		}),
 	}

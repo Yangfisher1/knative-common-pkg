@@ -22,7 +22,7 @@ import (
 	"github.com/google/go-cmp/cmp"
 	corev1 "k8s.io/api/core/v1"
 
-	_ "knative.dev/pkg/system/testing"
+	_ "github.com/Yangfisher1/knative-common-pkg/system/testing"
 )
 
 func TestObservabilityConfiguration(t *testing.T) {

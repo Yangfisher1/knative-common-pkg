@@ -28,10 +28,10 @@ import (
 	"k8s.io/apimachinery/pkg/runtime"
 	"k8s.io/apimachinery/pkg/runtime/schema"
 
-	"knative.dev/pkg/apis"
-	"knative.dev/pkg/kmeta"
-	"knative.dev/pkg/logging"
-	"knative.dev/pkg/logging/logkey"
+	"github.com/Yangfisher1/knative-common-pkg/apis"
+	"github.com/Yangfisher1/knative-common-pkg/kmeta"
+	"github.com/Yangfisher1/knative-common-pkg/logging"
+	"github.com/Yangfisher1/knative-common-pkg/logging/logkey"
 )
 
 // Convert implements webhook.ConversionController

@@ -21,12 +21,12 @@ import (
 	"errors"
 	"testing"
 
+	. "github.com/Yangfisher1/knative-common-pkg/tracing"
+	"github.com/Yangfisher1/knative-common-pkg/tracing/config"
 	"github.com/google/go-cmp/cmp"
 	openzipkin "github.com/openzipkin/zipkin-go"
 	zipkinreporter "github.com/openzipkin/zipkin-go/reporter"
 	reporterrecorder "github.com/openzipkin/zipkin-go/reporter/recorder"
-	. "knative.dev/pkg/tracing"
-	"knative.dev/pkg/tracing/config"
 )
 
 func TestOpenCensusTracerApplyConfig(t *testing.T) {

@@ -25,6 +25,7 @@ import (
 	"strings"
 	"time"
 
+	"github.com/Yangfisher1/knative-common-pkg/test/logging"
 	"github.com/davecgh/go-spew/spew"
 	"github.com/google/go-cmp/cmp"
 	appsv1 "k8s.io/api/apps/v1"
@@ -34,7 +35,6 @@ import (
 	"k8s.io/apimachinery/pkg/util/wait"
 	"k8s.io/client-go/kubernetes"
 	k8styped "k8s.io/client-go/kubernetes/typed/core/v1"
-	"knative.dev/pkg/test/logging"
 )
 
 const (

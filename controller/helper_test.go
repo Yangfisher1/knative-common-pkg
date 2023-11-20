@@ -25,7 +25,7 @@ import (
 	"k8s.io/apimachinery/pkg/runtime/schema"
 	"k8s.io/client-go/tools/cache"
 
-	. "knative.dev/pkg/testing"
+	. "github.com/Yangfisher1/knative-common-pkg/testing"
 )
 
 func TestEnsureTypeMeta(t *testing.T) {

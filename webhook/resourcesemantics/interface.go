@@ -17,8 +17,8 @@ limitations under the License.
 package resourcesemantics
 
 import (
+	"github.com/Yangfisher1/knative-common-pkg/apis"
 	"k8s.io/apimachinery/pkg/runtime"
-	"knative.dev/pkg/apis"
 )
 
 // GenericCRD is the interface definition that allows us to perform the generic

@@ -21,13 +21,13 @@ import (
 	"reflect"
 	"testing"
 
+	"github.com/Yangfisher1/knative-common-pkg/apis"
+	. "github.com/Yangfisher1/knative-common-pkg/logging/testing"
+	. "github.com/Yangfisher1/knative-common-pkg/testing"
+	. "github.com/Yangfisher1/knative-common-pkg/webhook/testing"
 	"github.com/google/go-cmp/cmp"
 	"github.com/google/go-cmp/cmp/cmpopts"
 	authenticationv1 "k8s.io/api/authentication/v1"
-	"knative.dev/pkg/apis"
-	. "knative.dev/pkg/logging/testing"
-	. "knative.dev/pkg/testing"
-	. "knative.dev/pkg/webhook/testing"
 )
 
 func TestSetUserInfoAnnotationsWhenWithinCreate(t *testing.T) {

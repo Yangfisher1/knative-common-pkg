@@ -21,9 +21,9 @@ import (
 	"testing"
 	"time"
 
+	"github.com/Yangfisher1/knative-common-pkg/test/prometheus"
 	v1 "github.com/prometheus/client_golang/api/prometheus/v1"
 	"github.com/prometheus/common/model"
-	"knative.dev/pkg/test/prometheus"
 )
 
 const (

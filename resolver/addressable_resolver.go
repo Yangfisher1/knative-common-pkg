@@ -24,19 +24,19 @@ import (
 	"k8s.io/apimachinery/pkg/runtime/schema"
 	"k8s.io/client-go/tools/cache"
 
-	"knative.dev/pkg/client/injection/ducks/duck/v1/addressable"
-	"knative.dev/pkg/controller"
+	"github.com/Yangfisher1/knative-common-pkg/client/injection/ducks/duck/v1/addressable"
+	"github.com/Yangfisher1/knative-common-pkg/controller"
 
 	corev1 "k8s.io/api/core/v1"
 	apierrs "k8s.io/apimachinery/pkg/api/errors"
 	"k8s.io/apimachinery/pkg/api/meta"
 
-	"knative.dev/pkg/apis"
-	pkgapisduck "knative.dev/pkg/apis/duck"
-	duckv1 "knative.dev/pkg/apis/duck/v1"
-	duckv1beta1 "knative.dev/pkg/apis/duck/v1beta1"
-	"knative.dev/pkg/network"
-	"knative.dev/pkg/tracker"
+	"github.com/Yangfisher1/knative-common-pkg/apis"
+	pkgapisduck "github.com/Yangfisher1/knative-common-pkg/apis/duck"
+	duckv1 "github.com/Yangfisher1/knative-common-pkg/apis/duck/v1"
+	duckv1beta1 "github.com/Yangfisher1/knative-common-pkg/apis/duck/v1beta1"
+	"github.com/Yangfisher1/knative-common-pkg/network"
+	"github.com/Yangfisher1/knative-common-pkg/tracker"
 )
 
 // RefResolverFunc resolves ObjectReferences into a URI.

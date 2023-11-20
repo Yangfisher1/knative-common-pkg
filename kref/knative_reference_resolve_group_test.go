@@ -25,9 +25,9 @@ import (
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/client-go/rest"
 
-	. "knative.dev/pkg/apis/duck/v1"
-	customresourcedefinitioninformer "knative.dev/pkg/client/injection/apiextensions/informers/apiextensions/v1/customresourcedefinition/fake"
-	"knative.dev/pkg/injection"
+	. "github.com/Yangfisher1/knative-common-pkg/apis/duck/v1"
+	customresourcedefinitioninformer "github.com/Yangfisher1/knative-common-pkg/client/injection/apiextensions/informers/apiextensions/v1/customresourcedefinition/fake"
+	"github.com/Yangfisher1/knative-common-pkg/injection"
 )
 
 func TestResolveGroup(t *testing.T) {

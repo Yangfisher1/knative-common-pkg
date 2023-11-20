@@ -19,16 +19,16 @@ package apis_test
 import (
 	"testing"
 
-	"knative.dev/pkg/depcheck"
+	"github.com/Yangfisher1/knative-common-pkg/depcheck"
 )
 
 func TestNoDeps(t *testing.T) {
 	depcheck.AssertNoDependency(t, map[string][]string{
-		"knative.dev/pkg/apis":                depcheck.KnownHeavyDependencies,
-		"knative.dev/pkg/apis/duck":           depcheck.KnownHeavyDependencies,
-		"knative.dev/pkg/apis/duck/ducktypes": depcheck.KnownHeavyDependencies,
-		"knative.dev/pkg/apis/duck/v1alpha1":  depcheck.KnownHeavyDependencies,
-		"knative.dev/pkg/apis/duck/v1beta1":   depcheck.KnownHeavyDependencies,
-		"knative.dev/pkg/apis/duck/v1":        depcheck.KnownHeavyDependencies,
+		"github.com/Yangfisher1/knative-common-pkg/apis":                depcheck.KnownHeavyDependencies,
+		"github.com/Yangfisher1/knative-common-pkg/apis/duck":           depcheck.KnownHeavyDependencies,
+		"github.com/Yangfisher1/knative-common-pkg/apis/duck/ducktypes": depcheck.KnownHeavyDependencies,
+		"github.com/Yangfisher1/knative-common-pkg/apis/duck/v1alpha1":  depcheck.KnownHeavyDependencies,
+		"github.com/Yangfisher1/knative-common-pkg/apis/duck/v1beta1":   depcheck.KnownHeavyDependencies,
+		"github.com/Yangfisher1/knative-common-pkg/apis/duck/v1":        depcheck.KnownHeavyDependencies,
 	})
 }

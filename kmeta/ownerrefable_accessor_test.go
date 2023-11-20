@@ -19,10 +19,10 @@ package kmeta
 import (
 	"testing"
 
+	. "github.com/Yangfisher1/knative-common-pkg/testing"
 	"github.com/google/go-cmp/cmp"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/apimachinery/pkg/runtime/schema"
-	. "knative.dev/pkg/testing"
 )
 
 type GoodObject struct {

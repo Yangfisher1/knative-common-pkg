@@ -21,11 +21,11 @@ package fake
 import (
 	context "context"
 
-	factoryfiltered "knative.dev/pkg/client/injection/kube/informers/factory/filtered"
-	filtered "knative.dev/pkg/client/injection/kube/informers/storage/v1beta1/csinode/filtered"
-	controller "knative.dev/pkg/controller"
-	injection "knative.dev/pkg/injection"
-	logging "knative.dev/pkg/logging"
+	factoryfiltered "github.com/Yangfisher1/knative-common-pkg/client/injection/kube/informers/factory/filtered"
+	filtered "github.com/Yangfisher1/knative-common-pkg/client/injection/kube/informers/storage/v1beta1/csinode/filtered"
+	controller "github.com/Yangfisher1/knative-common-pkg/controller"
+	injection "github.com/Yangfisher1/knative-common-pkg/injection"
+	logging "github.com/Yangfisher1/knative-common-pkg/logging"
 )
 
 var Get = filtered.Get

@@ -37,12 +37,12 @@ import (
 	"k8s.io/client-go/tools/record"
 	"k8s.io/client-go/util/workqueue"
 
-	"knative.dev/pkg/kmeta"
-	kle "knative.dev/pkg/leaderelection"
-	"knative.dev/pkg/logging"
-	"knative.dev/pkg/logging/logkey"
-	"knative.dev/pkg/reconciler"
-	"knative.dev/pkg/tracker"
+	"github.com/Yangfisher1/knative-common-pkg/kmeta"
+	kle "github.com/Yangfisher1/knative-common-pkg/leaderelection"
+	"github.com/Yangfisher1/knative-common-pkg/logging"
+	"github.com/Yangfisher1/knative-common-pkg/logging/logkey"
+	"github.com/Yangfisher1/knative-common-pkg/reconciler"
+	"github.com/Yangfisher1/knative-common-pkg/tracker"
 )
 
 const (

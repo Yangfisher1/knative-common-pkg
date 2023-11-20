@@ -23,8 +23,8 @@ import (
 	batchv1 "k8s.io/api/batch/v1"
 	corev1 "k8s.io/api/core/v1"
 
-	"knative.dev/pkg/apis/duck"
-	"knative.dev/pkg/apis/duck/ducktypes"
+	"github.com/Yangfisher1/knative-common-pkg/apis/duck"
+	"github.com/Yangfisher1/knative-common-pkg/apis/duck/ducktypes"
 )
 
 func TestTypesImplements(t *testing.T) {

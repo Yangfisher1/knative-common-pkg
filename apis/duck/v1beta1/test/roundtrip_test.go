@@ -19,13 +19,13 @@ package test
 import (
 	"testing"
 
-	"knative.dev/pkg/apis/duck/v1beta1"
+	"github.com/Yangfisher1/knative-common-pkg/apis/duck/v1beta1"
 
+	pkgfuzzer "github.com/Yangfisher1/knative-common-pkg/apis/testing/fuzzer"
+	"github.com/Yangfisher1/knative-common-pkg/apis/testing/roundtrip"
 	"k8s.io/apimachinery/pkg/api/apitesting/fuzzer"
 	"k8s.io/apimachinery/pkg/runtime"
 	utilruntime "k8s.io/apimachinery/pkg/util/runtime"
-	pkgfuzzer "knative.dev/pkg/apis/testing/fuzzer"
-	"knative.dev/pkg/apis/testing/roundtrip"
 )
 
 func TestEventingRoundTripTypesToJSON(t *testing.T) {

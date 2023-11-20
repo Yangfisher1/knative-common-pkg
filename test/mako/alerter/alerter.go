@@ -20,11 +20,11 @@ import (
 	"fmt"
 	"log"
 
+	"github.com/Yangfisher1/knative-common-pkg/test/helpers"
+	"github.com/Yangfisher1/knative-common-pkg/test/mako/alerter/github"
+	"github.com/Yangfisher1/knative-common-pkg/test/mako/alerter/slack"
+	"github.com/Yangfisher1/knative-common-pkg/test/mako/config"
 	qpb "github.com/google/mako/proto/quickstore/quickstore_go_proto"
-	"knative.dev/pkg/test/helpers"
-	"knative.dev/pkg/test/mako/alerter/github"
-	"knative.dev/pkg/test/mako/alerter/slack"
-	"knative.dev/pkg/test/mako/config"
 )
 
 // Alerter controls alert for performance regressions detected by Mako.

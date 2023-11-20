@@ -70,13 +70,13 @@ func (g *reconcilerControllerStubGenerator) GenerateType(c *generator.Context, t
 			Package: g.informerPackagePath,
 			Name:    "Get",
 		}),
-		"controllerImpl": c.Universe.Type(types.Name{Package: "knative.dev/pkg/controller", Name: "Impl"}),
+		"controllerImpl": c.Universe.Type(types.Name{Package: "github.com/Yangfisher1/knative-common-pkg/controller", Name: "Impl"}),
 		"reconcilerNewImpl": c.Universe.Type(types.Name{
 			Package: g.reconcilerPkg,
 			Name:    "NewImpl",
 		}),
 		"loggingFromContext": c.Universe.Function(types.Name{
-			Package: "knative.dev/pkg/logging",
+			Package: "github.com/Yangfisher1/knative-common-pkg/logging",
 			Name:    "FromContext",
 		}),
 		"contextContext": c.Universe.Type(types.Name{
@@ -84,7 +84,7 @@ func (g *reconcilerControllerStubGenerator) GenerateType(c *generator.Context, t
 			Name:    "Context",
 		}),
 		"configmapWatcher": c.Universe.Type(types.Name{
-			Package: "knative.dev/pkg/configmap",
+			Package: "github.com/Yangfisher1/knative-common-pkg/configmap",
 			Name:    "Watcher",
 		}),
 		"classAnnotationKey": c.Universe.Variable(types.Name{
@@ -96,11 +96,11 @@ func (g *reconcilerControllerStubGenerator) GenerateType(c *generator.Context, t
 			Name:    "ClassAnnotationKeys",
 		}),
 		"annotationFilterFunc": c.Universe.Function(types.Name{
-			Package: "knative.dev/pkg/reconciler",
+			Package: "github.com/Yangfisher1/knative-common-pkg/reconciler",
 			Name:    "AnnotationFilterFunc",
 		}),
 		"orFilterFunc": c.Universe.Function(types.Name{
-			Package: "knative.dev/pkg/reconciler",
+			Package: "github.com/Yangfisher1/knative-common-pkg/reconciler",
 			Name:    "Or",
 		}),
 		"filterHandler": c.Universe.Type(types.Name{

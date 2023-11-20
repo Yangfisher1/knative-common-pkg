@@ -21,10 +21,10 @@ package fake
 import (
 	context "context"
 
-	node "knative.dev/pkg/client/injection/kube/informers/core/v1/node"
-	fake "knative.dev/pkg/client/injection/kube/informers/factory/fake"
-	controller "knative.dev/pkg/controller"
-	injection "knative.dev/pkg/injection"
+	node "github.com/Yangfisher1/knative-common-pkg/client/injection/kube/informers/core/v1/node"
+	fake "github.com/Yangfisher1/knative-common-pkg/client/injection/kube/informers/factory/fake"
+	controller "github.com/Yangfisher1/knative-common-pkg/controller"
+	injection "github.com/Yangfisher1/knative-common-pkg/injection"
 )
 
 var Get = node.Get

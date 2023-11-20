@@ -19,11 +19,11 @@ package configmap_test
 import (
 	"testing"
 
-	"knative.dev/pkg/depcheck"
+	"github.com/Yangfisher1/knative-common-pkg/depcheck"
 )
 
 func TestNoDeps(t *testing.T) {
 	depcheck.AssertNoDependency(t, map[string][]string{
-		"knative.dev/pkg/configmap": depcheck.KnownHeavyDependencies,
+		"github.com/Yangfisher1/knative-common-pkg/configmap": depcheck.KnownHeavyDependencies,
 	})
 }

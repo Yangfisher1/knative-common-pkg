@@ -20,8 +20,8 @@ import (
 	"testing"
 	"time"
 
+	. "github.com/Yangfisher1/knative-common-pkg/logging/testing"
 	"golang.org/x/net/context"
-	. "knative.dev/pkg/logging/testing"
 )
 
 func TestMetricsExporter(t *testing.T) {

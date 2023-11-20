@@ -23,9 +23,9 @@ import (
 
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 
-	"knative.dev/pkg/apis"
-	duckv1 "knative.dev/pkg/apis/duck/v1"
-	"knative.dev/pkg/logging"
+	"github.com/Yangfisher1/knative-common-pkg/apis"
+	duckv1 "github.com/Yangfisher1/knative-common-pkg/apis/duck/v1"
+	"github.com/Yangfisher1/knative-common-pkg/logging"
 )
 
 const failedGenerationBump = "NewObservedGenFailure"

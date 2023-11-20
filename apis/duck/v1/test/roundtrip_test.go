@@ -19,12 +19,12 @@ package test
 import (
 	"testing"
 
+	pkgfuzzer "github.com/Yangfisher1/knative-common-pkg/apis/testing/fuzzer"
+	"github.com/Yangfisher1/knative-common-pkg/apis/testing/roundtrip"
 	v1 "k8s.io/api/apps/v1"
 	"k8s.io/apimachinery/pkg/api/apitesting/fuzzer"
 	"k8s.io/apimachinery/pkg/runtime"
 	utilruntime "k8s.io/apimachinery/pkg/util/runtime"
-	pkgfuzzer "knative.dev/pkg/apis/testing/fuzzer"
-	"knative.dev/pkg/apis/testing/roundtrip"
 )
 
 func TestEventingRoundTripTypesToJSON(t *testing.T) {

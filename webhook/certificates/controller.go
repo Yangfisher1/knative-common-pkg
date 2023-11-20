@@ -20,17 +20,17 @@ import (
 	"context"
 
 	// Injection stuff
-	kubeclient "knative.dev/pkg/client/injection/kube/client"
-	secretinformer "knative.dev/pkg/injection/clients/namespacedkube/informers/core/v1/secret"
+	kubeclient "github.com/Yangfisher1/knative-common-pkg/client/injection/kube/client"
+	secretinformer "github.com/Yangfisher1/knative-common-pkg/injection/clients/namespacedkube/informers/core/v1/secret"
 
+	"github.com/Yangfisher1/knative-common-pkg/configmap"
+	"github.com/Yangfisher1/knative-common-pkg/controller"
+	"github.com/Yangfisher1/knative-common-pkg/logging"
+	pkgreconciler "github.com/Yangfisher1/knative-common-pkg/reconciler"
+	"github.com/Yangfisher1/knative-common-pkg/system"
+	"github.com/Yangfisher1/knative-common-pkg/webhook"
 	"k8s.io/apimachinery/pkg/types"
 	"k8s.io/client-go/tools/cache"
-	"knative.dev/pkg/configmap"
-	"knative.dev/pkg/controller"
-	"knative.dev/pkg/logging"
-	pkgreconciler "knative.dev/pkg/reconciler"
-	"knative.dev/pkg/system"
-	"knative.dev/pkg/webhook"
 )
 
 // NewController constructs a controller for materializing webhook certificates.

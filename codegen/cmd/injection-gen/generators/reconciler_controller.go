@@ -73,23 +73,23 @@ func (g *reconcilerControllerGenerator) GenerateType(c *generator.Context, t *ty
 		"hasClass":  g.hasReconcilerClass,
 		"hasStatus": g.hasStatus,
 		"controllerImpl": c.Universe.Type(types.Name{
-			Package: "knative.dev/pkg/controller",
+			Package: "github.com/Yangfisher1/knative-common-pkg/controller",
 			Name:    "Impl",
 		}),
 		"controllerReconciler": c.Universe.Type(types.Name{
-			Package: "knative.dev/pkg/controller",
+			Package: "github.com/Yangfisher1/knative-common-pkg/controller",
 			Name:    "Reconciler",
 		}),
 		"controllerNewContext": c.Universe.Function(types.Name{
-			Package: "knative.dev/pkg/controller",
+			Package: "github.com/Yangfisher1/knative-common-pkg/controller",
 			Name:    "NewContext",
 		}),
 		"loggingFromContext": c.Universe.Function(types.Name{
-			Package: "knative.dev/pkg/logging",
+			Package: "github.com/Yangfisher1/knative-common-pkg/logging",
 			Name:    "FromContext",
 		}),
 		"ptrString": c.Universe.Function(types.Name{
-			Package: "knative.dev/pkg/ptr",
+			Package: "github.com/Yangfisher1/knative-common-pkg/ptr",
 			Name:    "String",
 		}),
 		"corev1EventSource": c.Universe.Function(types.Name{
@@ -113,7 +113,7 @@ func (g *reconcilerControllerGenerator) GenerateType(c *generator.Context, t *ty
 			Name:    "AddToScheme",
 		}),
 		"kubeclientGet": c.Universe.Function(types.Name{
-			Package: "knative.dev/pkg/client/injection/kube/client",
+			Package: "github.com/Yangfisher1/knative-common-pkg/client/injection/kube/client",
 			Name:    "Get",
 		}),
 		"typedcorev1EventSinkImpl": c.Universe.Function(types.Name{
@@ -129,15 +129,15 @@ func (g *reconcilerControllerGenerator) GenerateType(c *generator.Context, t *ty
 			Name:    "Interface",
 		}),
 		"controllerGetEventRecorder": c.Universe.Function(types.Name{
-			Package: "knative.dev/pkg/controller",
+			Package: "github.com/Yangfisher1/knative-common-pkg/controller",
 			Name:    "GetEventRecorder",
 		}),
 		"controllerOptions": c.Universe.Type(types.Name{
-			Package: "knative.dev/pkg/controller",
+			Package: "github.com/Yangfisher1/knative-common-pkg/controller",
 			Name:    "ControllerOptions",
 		}),
 		"controllerOptionsFn": c.Universe.Type(types.Name{
-			Package: "knative.dev/pkg/controller",
+			Package: "github.com/Yangfisher1/knative-common-pkg/controller",
 			Name:    "OptionsFn",
 		}),
 		"contextContext": c.Universe.Type(types.Name{
@@ -145,11 +145,11 @@ func (g *reconcilerControllerGenerator) GenerateType(c *generator.Context, t *ty
 			Name:    "Context",
 		}),
 		"reconcilerLeaderAwareFuncs": c.Universe.Type(types.Name{
-			Package: "knative.dev/pkg/reconciler",
+			Package: "github.com/Yangfisher1/knative-common-pkg/reconciler",
 			Name:    "LeaderAwareFuncs",
 		}),
 		"reconcilerBucket": c.Universe.Type(types.Name{
-			Package: "knative.dev/pkg/reconciler",
+			Package: "github.com/Yangfisher1/knative-common-pkg/reconciler",
 			Name:    "Bucket",
 		}),
 		"typesNamespacedName": c.Universe.Type(types.Name{
@@ -173,11 +173,11 @@ func (g *reconcilerControllerGenerator) GenerateType(c *generator.Context, t *ty
 			Name:    "Sprintf",
 		}),
 		"logkeyControllerType": c.Universe.Constant(types.Name{
-			Package: "knative.dev/pkg/logging/logkey",
+			Package: "github.com/Yangfisher1/knative-common-pkg/logging/logkey",
 			Name:    "ControllerType",
 		}),
 		"logkeyControllerKind": c.Universe.Constant(types.Name{
-			Package: "knative.dev/pkg/logging/logkey",
+			Package: "github.com/Yangfisher1/knative-common-pkg/logging/logkey",
 			Name:    "Kind",
 		}),
 		"zapString": c.Universe.Function(types.Name{

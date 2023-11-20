@@ -22,16 +22,16 @@ import (
 	"crypto/x509"
 	"time"
 
+	"github.com/Yangfisher1/knative-common-pkg/controller"
+	"github.com/Yangfisher1/knative-common-pkg/logging"
+	pkgreconciler "github.com/Yangfisher1/knative-common-pkg/reconciler"
+	certresources "github.com/Yangfisher1/knative-common-pkg/webhook/certificates/resources"
 	"go.uber.org/zap"
 	apierrors "k8s.io/apimachinery/pkg/api/errors"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/apimachinery/pkg/types"
 	"k8s.io/client-go/kubernetes"
 	corelisters "k8s.io/client-go/listers/core/v1"
-	"knative.dev/pkg/controller"
-	"knative.dev/pkg/logging"
-	pkgreconciler "knative.dev/pkg/reconciler"
-	certresources "knative.dev/pkg/webhook/certificates/resources"
 )
 
 const (

@@ -19,7 +19,7 @@ package v1
 import (
 	"context"
 
-	"knative.dev/pkg/apis"
+	"github.com/Yangfisher1/knative-common-pkg/apis"
 )
 
 // PodSpecValidator is a callback to validate a PodSpecable.

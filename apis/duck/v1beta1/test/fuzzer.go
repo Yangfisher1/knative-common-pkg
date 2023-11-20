@@ -17,12 +17,12 @@ limitations under the License.
 package test
 
 import (
+	"github.com/Yangfisher1/knative-common-pkg/apis"
+	"github.com/Yangfisher1/knative-common-pkg/apis/duck/v1beta1"
+	pkgfuzzer "github.com/Yangfisher1/knative-common-pkg/apis/testing/fuzzer"
 	fuzz "github.com/google/gofuzz"
 	"k8s.io/apimachinery/pkg/api/apitesting/fuzzer"
 	"k8s.io/apimachinery/pkg/runtime/serializer"
-	"knative.dev/pkg/apis"
-	"knative.dev/pkg/apis/duck/v1beta1"
-	pkgfuzzer "knative.dev/pkg/apis/testing/fuzzer"
 )
 
 var testConditions = apis.Conditions{{Type: apis.ConditionReady}, {Type: apis.ConditionSucceeded}}

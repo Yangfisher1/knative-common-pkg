@@ -21,16 +21,16 @@ import (
 	"errors"
 	"fmt"
 
+	"github.com/Yangfisher1/knative-common-pkg/apis"
+	kubeclient "github.com/Yangfisher1/knative-common-pkg/client/injection/kube/client"
+	"github.com/Yangfisher1/knative-common-pkg/logging"
+	"github.com/Yangfisher1/knative-common-pkg/webhook"
+	"github.com/Yangfisher1/knative-common-pkg/webhook/json"
+	"github.com/Yangfisher1/knative-common-pkg/webhook/resourcesemantics"
 	"go.uber.org/zap"
 	admissionv1 "k8s.io/api/admission/v1"
 	"k8s.io/apimachinery/pkg/apis/meta/v1/unstructured"
 	"k8s.io/apimachinery/pkg/runtime/schema"
-	"knative.dev/pkg/apis"
-	kubeclient "knative.dev/pkg/client/injection/kube/client"
-	"knative.dev/pkg/logging"
-	"knative.dev/pkg/webhook"
-	"knative.dev/pkg/webhook/json"
-	"knative.dev/pkg/webhook/resourcesemantics"
 )
 
 var errMissingNewObject = errors.New("the new object may not be nil")

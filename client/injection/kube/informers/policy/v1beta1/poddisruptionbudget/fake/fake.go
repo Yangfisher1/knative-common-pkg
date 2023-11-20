@@ -21,10 +21,10 @@ package fake
 import (
 	context "context"
 
-	fake "knative.dev/pkg/client/injection/kube/informers/factory/fake"
-	poddisruptionbudget "knative.dev/pkg/client/injection/kube/informers/policy/v1beta1/poddisruptionbudget"
-	controller "knative.dev/pkg/controller"
-	injection "knative.dev/pkg/injection"
+	fake "github.com/Yangfisher1/knative-common-pkg/client/injection/kube/informers/factory/fake"
+	poddisruptionbudget "github.com/Yangfisher1/knative-common-pkg/client/injection/kube/informers/policy/v1beta1/poddisruptionbudget"
+	controller "github.com/Yangfisher1/knative-common-pkg/controller"
+	injection "github.com/Yangfisher1/knative-common-pkg/injection"
 )
 
 var Get = poddisruptionbudget.Get

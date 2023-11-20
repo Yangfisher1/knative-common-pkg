@@ -21,6 +21,11 @@ package replicaset
 import (
 	context "context"
 
+	client "github.com/Yangfisher1/knative-common-pkg/client/injection/kube/client"
+	factory "github.com/Yangfisher1/knative-common-pkg/client/injection/kube/informers/factory"
+	controller "github.com/Yangfisher1/knative-common-pkg/controller"
+	injection "github.com/Yangfisher1/knative-common-pkg/injection"
+	logging "github.com/Yangfisher1/knative-common-pkg/logging"
 	apiappsv1beta2 "k8s.io/api/apps/v1beta2"
 	v1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	labels "k8s.io/apimachinery/pkg/labels"
@@ -28,11 +33,6 @@ import (
 	kubernetes "k8s.io/client-go/kubernetes"
 	appsv1beta2 "k8s.io/client-go/listers/apps/v1beta2"
 	cache "k8s.io/client-go/tools/cache"
-	client "knative.dev/pkg/client/injection/kube/client"
-	factory "knative.dev/pkg/client/injection/kube/informers/factory"
-	controller "knative.dev/pkg/controller"
-	injection "knative.dev/pkg/injection"
-	logging "knative.dev/pkg/logging"
 )
 
 func init() {

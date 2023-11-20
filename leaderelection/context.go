@@ -28,11 +28,11 @@ import (
 	"k8s.io/client-go/tools/leaderelection"
 	"k8s.io/client-go/tools/leaderelection/resourcelock"
 
-	"knative.dev/pkg/hash"
-	"knative.dev/pkg/logging"
-	"knative.dev/pkg/network"
-	"knative.dev/pkg/reconciler"
-	"knative.dev/pkg/system"
+	"github.com/Yangfisher1/knative-common-pkg/hash"
+	"github.com/Yangfisher1/knative-common-pkg/logging"
+	"github.com/Yangfisher1/knative-common-pkg/network"
+	"github.com/Yangfisher1/knative-common-pkg/reconciler"
+	"github.com/Yangfisher1/knative-common-pkg/system"
 )
 
 // WithDynamicLeaderElectorBuilder sets up the statefulset elector based on environment,

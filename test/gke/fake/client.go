@@ -24,8 +24,8 @@ import (
 	"sync"
 	"time"
 
+	"github.com/Yangfisher1/knative-common-pkg/test/gke"
 	container "google.golang.org/api/container/v1beta1"
-	"knative.dev/pkg/test/gke"
 )
 
 // Timeout for fake client.

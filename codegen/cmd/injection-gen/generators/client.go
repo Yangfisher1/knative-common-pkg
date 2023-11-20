@@ -102,15 +102,15 @@ func (g *clientGenerator) GenerateType(c *generator.Context, t *types.Type, w io
 	m := map[string]interface{}{
 		"clientSetNewForConfigOrDie":     c.Universe.Function(types.Name{Package: g.clientSetPackage, Name: "NewForConfigOrDie"}),
 		"clientSetInterface":             c.Universe.Type(types.Name{Package: g.clientSetPackage, Name: "Interface"}),
-		"injectionRegisterClient":        c.Universe.Function(types.Name{Package: "knative.dev/pkg/injection", Name: "Default.RegisterClient"}),
-		"injectionRegisterDynamicClient": c.Universe.Function(types.Name{Package: "knative.dev/pkg/injection", Name: "Dynamic.RegisterDynamicClient"}),
+		"injectionRegisterClient":        c.Universe.Function(types.Name{Package: "github.com/Yangfisher1/knative-common-pkg/injection", Name: "Default.RegisterClient"}),
+		"injectionRegisterDynamicClient": c.Universe.Function(types.Name{Package: "github.com/Yangfisher1/knative-common-pkg/injection", Name: "Dynamic.RegisterDynamicClient"}),
 		"injectionRegisterClientFetcher": c.Universe.Function(types.Name{
-			Package: "knative.dev/pkg/injection",
+			Package: "github.com/Yangfisher1/knative-common-pkg/injection",
 			Name:    "Default.RegisterClientFetcher",
 		}),
 		"restConfig": c.Universe.Type(types.Name{Package: "k8s.io/client-go/rest", Name: "Config"}),
 		"loggingFromContext": c.Universe.Function(types.Name{
-			Package: "knative.dev/pkg/logging",
+			Package: "github.com/Yangfisher1/knative-common-pkg/logging",
 			Name:    "FromContext",
 		}),
 		"contextContext": c.Universe.Type(types.Name{
@@ -122,7 +122,7 @@ func (g *clientGenerator) GenerateType(c *generator.Context, t *types.Type, w io
 			Name:    "Interface",
 		}),
 		"dynamicclientGet": c.Universe.Function(types.Name{
-			Package: "knative.dev/pkg/injection/clients/dynamicclient",
+			Package: "github.com/Yangfisher1/knative-common-pkg/injection/clients/dynamicclient",
 			Name:    "Get",
 		}),
 		"discoveryInterface": c.Universe.Type(types.Name{

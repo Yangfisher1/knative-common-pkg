@@ -21,6 +21,8 @@ import (
 	"errors"
 	"time"
 
+	"github.com/Yangfisher1/knative-common-pkg/metrics"
+	"github.com/Yangfisher1/knative-common-pkg/metrics/metricskey"
 	"go.opencensus.io/stats"
 	"go.opencensus.io/stats/view"
 	"go.opencensus.io/tag"
@@ -28,8 +30,6 @@ import (
 	"k8s.io/apimachinery/pkg/types"
 	kubemetrics "k8s.io/client-go/tools/metrics"
 	"k8s.io/client-go/util/workqueue"
-	"knative.dev/pkg/metrics"
-	"knative.dev/pkg/metrics/metricskey"
 )
 
 var (

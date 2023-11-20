@@ -20,22 +20,22 @@ import (
 	"context"
 	"testing"
 
-	fakeapixclient "knative.dev/pkg/client/injection/apiextensions/client/fake"
-	fakekubeclient "knative.dev/pkg/client/injection/kube/client/fake"
-	fakedynamicclient "knative.dev/pkg/injection/clients/dynamicclient/fake"
-	"knative.dev/pkg/reconciler"
+	fakeapixclient "github.com/Yangfisher1/knative-common-pkg/client/injection/apiextensions/client/fake"
+	fakekubeclient "github.com/Yangfisher1/knative-common-pkg/client/injection/kube/client/fake"
+	fakedynamicclient "github.com/Yangfisher1/knative-common-pkg/injection/clients/dynamicclient/fake"
+	"github.com/Yangfisher1/knative-common-pkg/reconciler"
 
-	"knative.dev/pkg/configmap"
-	"knative.dev/pkg/controller"
-	"knative.dev/pkg/logging"
-	logtesting "knative.dev/pkg/logging/testing"
+	"github.com/Yangfisher1/knative-common-pkg/configmap"
+	"github.com/Yangfisher1/knative-common-pkg/controller"
+	"github.com/Yangfisher1/knative-common-pkg/logging"
+	logtesting "github.com/Yangfisher1/knative-common-pkg/logging/testing"
 
 	"k8s.io/apimachinery/pkg/runtime"
 	"k8s.io/apimachinery/pkg/types"
 	ktesting "k8s.io/client-go/testing"
 	"k8s.io/client-go/tools/record"
 
-	rtesting "knative.dev/pkg/reconciler/testing"
+	rtesting "github.com/Yangfisher1/knative-common-pkg/reconciler/testing"
 )
 
 const (

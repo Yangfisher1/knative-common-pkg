@@ -44,15 +44,18 @@ var bannedImports = []vbTuple{
 }
 
 // TestBannedImports run with:
-//   go test ./vendor/knative.dev/pkg/test/imports/ -run TestBannedImports
+//
+//	go test ./vendor/github.com/Yangfisher1/knative-common-pkg/test/imports/ -run TestBannedImports
+//
 // Or with test-infra:
-//   report_go_test ${REPO_ROOT_DIR}/vendor/knative.dev/pkg/test/imports/...
+//
+//	report_go_test ${REPO_ROOT_DIR}/vendor/github.com/Yangfisher1/knative-common-pkg/test/imports/...
 func TestBannedImports(t *testing.T) {
 	_, filename, _, _ := runtime.Caller(0)
 	dir := filepath.Dir(filename)
 
 	if !strings.Contains(dir, "vendor") {
-		t.Skipf("knative.dev/pkg not vendored, skipping...")
+		t.Skipf("github.com/Yangfisher1/knative-common-pkg not vendored, skipping...")
 	}
 
 	parts := strings.Split(dir, "vendor")

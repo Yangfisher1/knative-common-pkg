@@ -21,7 +21,7 @@ import (
 	"k8s.io/apimachinery/pkg/runtime"
 	"k8s.io/apimachinery/pkg/runtime/schema"
 
-	"knative.dev/pkg/apis/duck/ducktypes"
+	"github.com/Yangfisher1/knative-common-pkg/apis/duck/ducktypes"
 )
 
 // SchemeGroupVersion is group version used to register these objects

@@ -21,10 +21,10 @@ package fake
 import (
 	context "context"
 
-	horizontalpodautoscaler "knative.dev/pkg/client/injection/kube/informers/autoscaling/v1/horizontalpodautoscaler"
-	fake "knative.dev/pkg/client/injection/kube/informers/factory/fake"
-	controller "knative.dev/pkg/controller"
-	injection "knative.dev/pkg/injection"
+	horizontalpodautoscaler "github.com/Yangfisher1/knative-common-pkg/client/injection/kube/informers/autoscaling/v1/horizontalpodautoscaler"
+	fake "github.com/Yangfisher1/knative-common-pkg/client/injection/kube/informers/factory/fake"
+	controller "github.com/Yangfisher1/knative-common-pkg/controller"
+	injection "github.com/Yangfisher1/knative-common-pkg/injection"
 )
 
 var Get = horizontalpodautoscaler.Get

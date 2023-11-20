@@ -34,15 +34,15 @@ import (
 	admissionlisters "k8s.io/client-go/listers/admissionregistration/v1"
 	corelisters "k8s.io/client-go/listers/core/v1"
 
-	"knative.dev/pkg/configmap"
-	"knative.dev/pkg/controller"
-	"knative.dev/pkg/kmp"
-	"knative.dev/pkg/logging"
-	"knative.dev/pkg/ptr"
-	pkgreconciler "knative.dev/pkg/reconciler"
-	"knative.dev/pkg/system"
-	"knative.dev/pkg/webhook"
-	certresources "knative.dev/pkg/webhook/certificates/resources"
+	"github.com/Yangfisher1/knative-common-pkg/configmap"
+	"github.com/Yangfisher1/knative-common-pkg/controller"
+	"github.com/Yangfisher1/knative-common-pkg/kmp"
+	"github.com/Yangfisher1/knative-common-pkg/logging"
+	"github.com/Yangfisher1/knative-common-pkg/ptr"
+	pkgreconciler "github.com/Yangfisher1/knative-common-pkg/reconciler"
+	"github.com/Yangfisher1/knative-common-pkg/system"
+	"github.com/Yangfisher1/knative-common-pkg/webhook"
+	certresources "github.com/Yangfisher1/knative-common-pkg/webhook/certificates/resources"
 )
 
 // reconciler implements the AdmissionController for ConfigMaps

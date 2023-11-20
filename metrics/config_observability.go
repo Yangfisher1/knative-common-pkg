@@ -21,8 +21,8 @@ import (
 	"os"
 	texttemplate "text/template"
 
+	cm "github.com/Yangfisher1/knative-common-pkg/configmap"
 	corev1 "k8s.io/api/core/v1"
-	cm "knative.dev/pkg/configmap"
 )
 
 const (

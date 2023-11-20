@@ -22,7 +22,7 @@ import (
 	"go.uber.org/zap"
 	"go.uber.org/zap/zaptest"
 
-	"knative.dev/pkg/logging"
+	"github.com/Yangfisher1/knative-common-pkg/logging"
 )
 
 // TestLogger gets a logger to use in unit and end to end tests

@@ -23,6 +23,10 @@ import (
 	json "encoding/json"
 	fmt "fmt"
 
+	controller "github.com/Yangfisher1/knative-common-pkg/controller"
+	kmp "github.com/Yangfisher1/knative-common-pkg/kmp"
+	logging "github.com/Yangfisher1/knative-common-pkg/logging"
+	reconciler "github.com/Yangfisher1/knative-common-pkg/reconciler"
 	zap "go.uber.org/zap"
 	v1beta1 "k8s.io/api/batch/v1beta1"
 	v1 "k8s.io/api/core/v1"
@@ -35,10 +39,6 @@ import (
 	kubernetes "k8s.io/client-go/kubernetes"
 	batchv1beta1 "k8s.io/client-go/listers/batch/v1beta1"
 	record "k8s.io/client-go/tools/record"
-	controller "knative.dev/pkg/controller"
-	kmp "knative.dev/pkg/kmp"
-	logging "knative.dev/pkg/logging"
-	reconciler "knative.dev/pkg/reconciler"
 )
 
 // Interface defines the strongly typed interfaces to be implemented by a

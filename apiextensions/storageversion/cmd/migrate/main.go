@@ -23,15 +23,15 @@ import (
 	"os"
 	"strconv"
 
+	"github.com/Yangfisher1/knative-common-pkg/apiextensions/storageversion"
+	"github.com/Yangfisher1/knative-common-pkg/environment"
+	"github.com/Yangfisher1/knative-common-pkg/logging"
+	"github.com/Yangfisher1/knative-common-pkg/signals"
 	"go.uber.org/zap"
 	apixclient "k8s.io/apiextensions-apiserver/pkg/client/clientset/clientset"
 	apierrs "k8s.io/apimachinery/pkg/api/errors"
 	"k8s.io/apimachinery/pkg/runtime/schema"
 	"k8s.io/client-go/dynamic"
-	"knative.dev/pkg/apiextensions/storageversion"
-	"knative.dev/pkg/environment"
-	"knative.dev/pkg/logging"
-	"knative.dev/pkg/signals"
 )
 
 const (

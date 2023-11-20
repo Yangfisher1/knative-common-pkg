@@ -19,15 +19,15 @@ package duck
 import (
 	"context"
 
+	"github.com/Yangfisher1/knative-common-pkg/apis"
+	"github.com/Yangfisher1/knative-common-pkg/apis/duck"
+	duckv1 "github.com/Yangfisher1/knative-common-pkg/apis/duck/v1"
+	duckv1alpha1 "github.com/Yangfisher1/knative-common-pkg/apis/duck/v1alpha1"
+	"github.com/Yangfisher1/knative-common-pkg/tracker"
 	corev1 "k8s.io/api/core/v1"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/apimachinery/pkg/runtime"
 	"k8s.io/apimachinery/pkg/runtime/schema"
-	"knative.dev/pkg/apis"
-	"knative.dev/pkg/apis/duck"
-	duckv1 "knative.dev/pkg/apis/duck/v1"
-	duckv1alpha1 "knative.dev/pkg/apis/duck/v1alpha1"
-	"knative.dev/pkg/tracker"
 )
 
 // +k8s:deepcopy-gen:interfaces=k8s.io/apimachinery/pkg/runtime.Object

@@ -20,7 +20,7 @@ import (
 	"context"
 	"testing"
 
-	"knative.dev/pkg/apis"
+	"github.com/Yangfisher1/knative-common-pkg/apis"
 )
 
 func TestSourceValidate(t *testing.T) {

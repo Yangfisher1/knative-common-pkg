@@ -23,8 +23,8 @@ import (
 	"fmt"
 	"strings"
 
+	"github.com/Yangfisher1/knative-common-pkg/apis"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
-	"knative.dev/pkg/apis"
 )
 
 const (

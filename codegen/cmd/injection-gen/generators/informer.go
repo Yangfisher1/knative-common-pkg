@@ -97,13 +97,13 @@ func (g *injectionGenerator) GenerateType(c *generator.Context, t *types.Type, w
 		"group":                            g.groupVersion.Group.String(),
 		"version":                          g.groupVersion.Version.String(),
 		"type":                             t,
-		"injectionRegisterInformer":        c.Universe.Type(types.Name{Package: "knative.dev/pkg/injection", Name: "Default.RegisterInformer"}),
-		"injectionRegisterDynamicInformer": c.Universe.Type(types.Name{Package: "knative.dev/pkg/injection", Name: "Dynamic.RegisterDynamicInformer"}),
-		"controllerInformer":               c.Universe.Type(types.Name{Package: "knative.dev/pkg/controller", Name: "Informer"}),
+		"injectionRegisterInformer":        c.Universe.Type(types.Name{Package: "github.com/Yangfisher1/knative-common-pkg/injection", Name: "Default.RegisterInformer"}),
+		"injectionRegisterDynamicInformer": c.Universe.Type(types.Name{Package: "github.com/Yangfisher1/knative-common-pkg/injection", Name: "Dynamic.RegisterDynamicInformer"}),
+		"controllerInformer":               c.Universe.Type(types.Name{Package: "github.com/Yangfisher1/knative-common-pkg/controller", Name: "Informer"}),
 		"informersTypedInformer":           c.Universe.Type(types.Name{Package: g.typedInformerPackage, Name: t.Name.Name + "Informer"}),
 		"factoryGet":                       c.Universe.Type(types.Name{Package: g.groupInformerFactoryPackage, Name: "Get"}),
 		"loggingFromContext": c.Universe.Function(types.Name{
-			Package: "knative.dev/pkg/logging",
+			Package: "github.com/Yangfisher1/knative-common-pkg/logging",
 			Name:    "FromContext",
 		}),
 		"contextContext": c.Universe.Type(types.Name{
@@ -144,7 +144,7 @@ func (g *injectionGenerator) GenerateType(c *generator.Context, t *types.Type, w
 		}),
 		"Namespaced": !tags.NonNamespaced,
 		"injectionGetResourceVersion": c.Universe.Function(types.Name{
-			Package: "knative.dev/pkg/injection",
+			Package: "github.com/Yangfisher1/knative-common-pkg/injection",
 			Name:    "GetResourceVersion",
 		}),
 	}

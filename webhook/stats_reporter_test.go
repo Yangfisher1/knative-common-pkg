@@ -21,10 +21,10 @@ import (
 	"testing"
 	"time"
 
+	"github.com/Yangfisher1/knative-common-pkg/metrics/metricstest"
+	_ "github.com/Yangfisher1/knative-common-pkg/metrics/testing"
 	admissionv1 "k8s.io/api/admission/v1"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
-	"knative.dev/pkg/metrics/metricstest"
-	_ "knative.dev/pkg/metrics/testing"
 )
 
 func TestWebhookStatsReporter(t *testing.T) {

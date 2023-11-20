@@ -24,7 +24,7 @@ import (
 	"go.uber.org/zap"
 	"go.uber.org/zap/zapcore"
 
-	"knative.dev/pkg/test/upgrade"
+	"github.com/Yangfisher1/knative-common-pkg/test/upgrade"
 )
 
 const (

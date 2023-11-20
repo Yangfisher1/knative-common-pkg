@@ -25,11 +25,11 @@ import (
 	"encoding/json"
 	"fmt"
 
+	"github.com/Yangfisher1/knative-common-pkg/logging"
 	corev1 "k8s.io/api/core/v1"
 	apierrors "k8s.io/apimachinery/pkg/api/errors"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	v1 "k8s.io/client-go/kubernetes/typed/core/v1"
-	"knative.dev/pkg/logging"
 )
 
 type configMapKVStore struct {

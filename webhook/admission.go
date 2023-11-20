@@ -23,12 +23,12 @@ import (
 	"net/http"
 	"time"
 
+	"github.com/Yangfisher1/knative-common-pkg/apis"
+	"github.com/Yangfisher1/knative-common-pkg/logging"
+	"github.com/Yangfisher1/knative-common-pkg/logging/logkey"
 	"go.uber.org/zap"
 	admissionv1 "k8s.io/api/admission/v1"
 	apierrors "k8s.io/apimachinery/pkg/api/errors"
-	"knative.dev/pkg/apis"
-	"knative.dev/pkg/logging"
-	"knative.dev/pkg/logging/logkey"
 )
 
 const (

@@ -19,19 +19,19 @@ package conversion
 import (
 	"context"
 
+	"github.com/Yangfisher1/knative-common-pkg/apis"
+	apixclient "github.com/Yangfisher1/knative-common-pkg/client/injection/apiextensions/client"
+	crdinformer "github.com/Yangfisher1/knative-common-pkg/client/injection/apiextensions/informers/apiextensions/v1/customresourcedefinition"
+	"github.com/Yangfisher1/knative-common-pkg/controller"
+	secretinformer "github.com/Yangfisher1/knative-common-pkg/injection/clients/namespacedkube/informers/core/v1/secret"
+	"github.com/Yangfisher1/knative-common-pkg/logging"
+	pkgreconciler "github.com/Yangfisher1/knative-common-pkg/reconciler"
+	"github.com/Yangfisher1/knative-common-pkg/system"
+	"github.com/Yangfisher1/knative-common-pkg/webhook"
 	"k8s.io/apimachinery/pkg/runtime"
 	"k8s.io/apimachinery/pkg/runtime/schema"
 	"k8s.io/apimachinery/pkg/types"
 	"k8s.io/client-go/tools/cache"
-	"knative.dev/pkg/apis"
-	apixclient "knative.dev/pkg/client/injection/apiextensions/client"
-	crdinformer "knative.dev/pkg/client/injection/apiextensions/informers/apiextensions/v1/customresourcedefinition"
-	"knative.dev/pkg/controller"
-	secretinformer "knative.dev/pkg/injection/clients/namespacedkube/informers/core/v1/secret"
-	"knative.dev/pkg/logging"
-	pkgreconciler "knative.dev/pkg/reconciler"
-	"knative.dev/pkg/system"
-	"knative.dev/pkg/webhook"
 )
 
 // ConvertibleObject defines the functionality our API types

@@ -24,8 +24,8 @@ import (
 	"log"
 	"os"
 
+	"github.com/Yangfisher1/knative-common-pkg/configmap"
 	"gopkg.in/yaml.v3"
-	"knative.dev/pkg/configmap"
 )
 
 func main() {

@@ -19,10 +19,10 @@ package fake
 import (
 	context "context"
 
-	controller "knative.dev/pkg/controller"
-	injection "knative.dev/pkg/injection"
-	secret "knative.dev/pkg/injection/clients/namespacedkube/informers/core/v1/secret"
-	fake "knative.dev/pkg/injection/clients/namespacedkube/informers/factory/fake"
+	controller "github.com/Yangfisher1/knative-common-pkg/controller"
+	injection "github.com/Yangfisher1/knative-common-pkg/injection"
+	secret "github.com/Yangfisher1/knative-common-pkg/injection/clients/namespacedkube/informers/core/v1/secret"
+	fake "github.com/Yangfisher1/knative-common-pkg/injection/clients/namespacedkube/informers/factory/fake"
 )
 
 var Get = secret.Get

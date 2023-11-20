@@ -37,15 +37,15 @@ import (
 	"k8s.io/client-go/tools/record"
 	"k8s.io/client-go/util/workqueue"
 
-	"knative.dev/pkg/leaderelection"
-	"knative.dev/pkg/ptr"
-	"knative.dev/pkg/reconciler"
-	"knative.dev/pkg/system"
+	"github.com/Yangfisher1/knative-common-pkg/leaderelection"
+	"github.com/Yangfisher1/knative-common-pkg/ptr"
+	"github.com/Yangfisher1/knative-common-pkg/reconciler"
+	"github.com/Yangfisher1/knative-common-pkg/system"
 
-	. "knative.dev/pkg/controller/testing"
-	. "knative.dev/pkg/logging/testing"
-	_ "knative.dev/pkg/system/testing"
-	. "knative.dev/pkg/testing"
+	. "github.com/Yangfisher1/knative-common-pkg/controller/testing"
+	. "github.com/Yangfisher1/knative-common-pkg/logging/testing"
+	_ "github.com/Yangfisher1/knative-common-pkg/system/testing"
+	. "github.com/Yangfisher1/knative-common-pkg/testing"
 )
 
 const (

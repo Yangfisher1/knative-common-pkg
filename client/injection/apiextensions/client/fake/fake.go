@@ -21,12 +21,12 @@ package fake
 import (
 	context "context"
 
+	client "github.com/Yangfisher1/knative-common-pkg/client/injection/apiextensions/client"
+	injection "github.com/Yangfisher1/knative-common-pkg/injection"
+	logging "github.com/Yangfisher1/knative-common-pkg/logging"
 	fake "k8s.io/apiextensions-apiserver/pkg/client/clientset/clientset/fake"
 	runtime "k8s.io/apimachinery/pkg/runtime"
 	rest "k8s.io/client-go/rest"
-	client "knative.dev/pkg/client/injection/apiextensions/client"
-	injection "knative.dev/pkg/injection"
-	logging "knative.dev/pkg/logging"
 )
 
 func init() {

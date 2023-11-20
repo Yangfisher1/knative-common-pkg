@@ -21,8 +21,8 @@ import (
 	"testing"
 	"time"
 
-	"knative.dev/pkg/test/mako/config"
-	"knative.dev/pkg/test/slackutil/fakeslackutil"
+	"github.com/Yangfisher1/knative-common-pkg/test/mako/config"
+	"github.com/Yangfisher1/knative-common-pkg/test/slackutil/fakeslackutil"
 )
 
 var mh MessageHandler

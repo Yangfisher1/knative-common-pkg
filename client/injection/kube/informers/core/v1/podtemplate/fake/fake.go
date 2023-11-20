@@ -21,10 +21,10 @@ package fake
 import (
 	context "context"
 
-	podtemplate "knative.dev/pkg/client/injection/kube/informers/core/v1/podtemplate"
-	fake "knative.dev/pkg/client/injection/kube/informers/factory/fake"
-	controller "knative.dev/pkg/controller"
-	injection "knative.dev/pkg/injection"
+	podtemplate "github.com/Yangfisher1/knative-common-pkg/client/injection/kube/informers/core/v1/podtemplate"
+	fake "github.com/Yangfisher1/knative-common-pkg/client/injection/kube/informers/factory/fake"
+	controller "github.com/Yangfisher1/knative-common-pkg/controller"
+	injection "github.com/Yangfisher1/knative-common-pkg/injection"
 )
 
 var Get = podtemplate.Get

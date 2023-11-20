@@ -22,11 +22,11 @@ import (
 	"strings"
 	"sync"
 
+	"github.com/Yangfisher1/knative-common-pkg/system"
+	"github.com/Yangfisher1/knative-common-pkg/test"
+	"github.com/Yangfisher1/knative-common-pkg/test/helpers"
+	logstreamv2 "github.com/Yangfisher1/knative-common-pkg/test/logstream/v2"
 	"k8s.io/client-go/kubernetes"
-	"knative.dev/pkg/system"
-	"knative.dev/pkg/test"
-	"knative.dev/pkg/test/helpers"
-	logstreamv2 "knative.dev/pkg/test/logstream/v2"
 )
 
 // Canceler is the type of a function returned when a logstream is started to be

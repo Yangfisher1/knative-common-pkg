@@ -22,7 +22,7 @@ import (
 	"os"
 	"testing"
 
-	"knative.dev/pkg/test/upgrade"
+	"github.com/Yangfisher1/knative-common-pkg/test/upgrade"
 )
 
 func TestSuiteExecuteWithFailures(t *testing.T) {

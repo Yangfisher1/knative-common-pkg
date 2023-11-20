@@ -19,11 +19,11 @@ package v1alpha1
 import (
 	"context"
 
+	"github.com/Yangfisher1/knative-common-pkg/apis"
+	duckv1 "github.com/Yangfisher1/knative-common-pkg/apis/duck/v1"
+	"github.com/Yangfisher1/knative-common-pkg/kmeta"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/apimachinery/pkg/runtime/schema"
-	"knative.dev/pkg/apis"
-	duckv1 "knative.dev/pkg/apis/duck/v1"
-	"knative.dev/pkg/kmeta"
 )
 
 // +genclient

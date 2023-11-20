@@ -30,8 +30,8 @@ import (
 
 	"go.uber.org/zap"
 
-	"knative.dev/pkg/logging"
-	"knative.dev/pkg/network"
+	"github.com/Yangfisher1/knative-common-pkg/logging"
+	"github.com/Yangfisher1/knative-common-pkg/network"
 )
 
 const (

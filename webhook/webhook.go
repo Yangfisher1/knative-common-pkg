@@ -27,15 +27,15 @@ import (
 
 	// Injection stuff
 
-	kubeinformerfactory "knative.dev/pkg/injection/clients/namespacedkube/informers/factory"
-	"knative.dev/pkg/network/handlers"
+	kubeinformerfactory "github.com/Yangfisher1/knative-common-pkg/injection/clients/namespacedkube/informers/factory"
+	"github.com/Yangfisher1/knative-common-pkg/network/handlers"
 
+	"github.com/Yangfisher1/knative-common-pkg/logging"
+	"github.com/Yangfisher1/knative-common-pkg/system"
+	certresources "github.com/Yangfisher1/knative-common-pkg/webhook/certificates/resources"
 	"go.uber.org/zap"
 	"golang.org/x/sync/errgroup"
 	admissionv1 "k8s.io/api/admission/v1"
-	"knative.dev/pkg/logging"
-	"knative.dev/pkg/system"
-	certresources "knative.dev/pkg/webhook/certificates/resources"
 )
 
 // Options contains the configuration for the webhook

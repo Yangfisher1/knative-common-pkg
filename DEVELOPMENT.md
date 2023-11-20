@@ -44,7 +44,7 @@ export PATH="${PATH}:${GOPATH}/bin"
 
 ### Checkout your fork
 
-The Go tools require that you clone the repository to the `src/knative.dev/pkg`
+The Go tools require that you clone the repository to the `src/github.com/Yangfisher1/knative-common-pkg`
 directory in your [`GOPATH`](https://github.com/golang/go/wiki/SettingGOPATH).
 
 To check out this repository:

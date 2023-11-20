@@ -62,11 +62,11 @@ func (g *reconcilerReconcilerStubGenerator) GenerateType(c *generator.Context, t
 	m := map[string]interface{}{
 		"type": t,
 		"reconcilerEvent": c.Universe.Type(types.Name{
-			Package: "knative.dev/pkg/reconciler",
+			Package: "github.com/Yangfisher1/knative-common-pkg/reconciler",
 			Name:    "Event",
 		}),
 		"reconcilerNewEvent": c.Universe.Function(types.Name{
-			Package: "knative.dev/pkg/reconciler",
+			Package: "github.com/Yangfisher1/knative-common-pkg/reconciler",
 			Name:    "NewEvent",
 		}),
 		"reconcilerInterface": c.Universe.Type(types.Name{

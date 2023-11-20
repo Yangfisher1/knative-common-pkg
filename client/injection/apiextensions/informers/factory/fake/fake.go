@@ -21,11 +21,11 @@ package fake
 import (
 	context "context"
 
+	fake "github.com/Yangfisher1/knative-common-pkg/client/injection/apiextensions/client/fake"
+	factory "github.com/Yangfisher1/knative-common-pkg/client/injection/apiextensions/informers/factory"
+	controller "github.com/Yangfisher1/knative-common-pkg/controller"
+	injection "github.com/Yangfisher1/knative-common-pkg/injection"
 	externalversions "k8s.io/apiextensions-apiserver/pkg/client/informers/externalversions"
-	fake "knative.dev/pkg/client/injection/apiextensions/client/fake"
-	factory "knative.dev/pkg/client/injection/apiextensions/informers/factory"
-	controller "knative.dev/pkg/controller"
-	injection "knative.dev/pkg/injection"
 )
 
 var Get = factory.Get

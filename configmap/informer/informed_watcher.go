@@ -20,6 +20,7 @@ import (
 	"errors"
 	"fmt"
 
+	"github.com/Yangfisher1/knative-common-pkg/configmap"
 	corev1 "k8s.io/api/core/v1"
 	"k8s.io/apimachinery/pkg/api/equality"
 	k8serrors "k8s.io/apimachinery/pkg/api/errors"
@@ -31,7 +32,6 @@ import (
 	"k8s.io/client-go/informers/internalinterfaces"
 	"k8s.io/client-go/kubernetes"
 	"k8s.io/client-go/tools/cache"
-	"knative.dev/pkg/configmap"
 )
 
 // NewInformedWatcherFromFactory watches a Kubernetes namespace for ConfigMap changes.

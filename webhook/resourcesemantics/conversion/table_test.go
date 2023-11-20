@@ -20,20 +20,20 @@ import (
 	"context"
 	"testing"
 
+	apixclient "github.com/Yangfisher1/knative-common-pkg/client/injection/apiextensions/client/fake"
+	"github.com/Yangfisher1/knative-common-pkg/configmap"
+	"github.com/Yangfisher1/knative-common-pkg/controller"
+	"github.com/Yangfisher1/knative-common-pkg/ptr"
+	"github.com/Yangfisher1/knative-common-pkg/system"
+	certresources "github.com/Yangfisher1/knative-common-pkg/webhook/certificates/resources"
 	corev1 "k8s.io/api/core/v1"
 	apixv1 "k8s.io/apiextensions-apiserver/pkg/apis/apiextensions/v1"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/apimachinery/pkg/runtime"
 	clientgotesting "k8s.io/client-go/testing"
-	apixclient "knative.dev/pkg/client/injection/apiextensions/client/fake"
-	"knative.dev/pkg/configmap"
-	"knative.dev/pkg/controller"
-	"knative.dev/pkg/ptr"
-	"knative.dev/pkg/system"
-	certresources "knative.dev/pkg/webhook/certificates/resources"
 
-	. "knative.dev/pkg/reconciler/testing"
-	. "knative.dev/pkg/webhook/testing"
+	. "github.com/Yangfisher1/knative-common-pkg/reconciler/testing"
+	. "github.com/Yangfisher1/knative-common-pkg/webhook/testing"
 )
 
 func TestReconcile(t *testing.T) {

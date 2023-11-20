@@ -24,6 +24,13 @@ import (
 	reflect "reflect"
 	strings "strings"
 
+	client "github.com/Yangfisher1/knative-common-pkg/client/injection/apiextensions/client"
+	customresourcedefinition "github.com/Yangfisher1/knative-common-pkg/client/injection/apiextensions/informers/apiextensions/v1beta1/customresourcedefinition"
+	kubeclient "github.com/Yangfisher1/knative-common-pkg/client/injection/kube/client"
+	controller "github.com/Yangfisher1/knative-common-pkg/controller"
+	logging "github.com/Yangfisher1/knative-common-pkg/logging"
+	logkey "github.com/Yangfisher1/knative-common-pkg/logging/logkey"
+	reconciler "github.com/Yangfisher1/knative-common-pkg/reconciler"
 	zap "go.uber.org/zap"
 	corev1 "k8s.io/api/core/v1"
 	clientsetscheme "k8s.io/apiextensions-apiserver/pkg/client/clientset/clientset/scheme"
@@ -33,13 +40,6 @@ import (
 	scheme "k8s.io/client-go/kubernetes/scheme"
 	v1 "k8s.io/client-go/kubernetes/typed/core/v1"
 	record "k8s.io/client-go/tools/record"
-	client "knative.dev/pkg/client/injection/apiextensions/client"
-	customresourcedefinition "knative.dev/pkg/client/injection/apiextensions/informers/apiextensions/v1beta1/customresourcedefinition"
-	kubeclient "knative.dev/pkg/client/injection/kube/client"
-	controller "knative.dev/pkg/controller"
-	logging "knative.dev/pkg/logging"
-	logkey "knative.dev/pkg/logging/logkey"
-	reconciler "knative.dev/pkg/reconciler"
 )
 
 const (

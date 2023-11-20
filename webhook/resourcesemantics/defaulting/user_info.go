@@ -24,7 +24,7 @@ import (
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/apimachinery/pkg/apis/meta/v1/unstructured"
 
-	"knative.dev/pkg/apis"
+	"github.com/Yangfisher1/knative-common-pkg/apis"
 )
 
 var (

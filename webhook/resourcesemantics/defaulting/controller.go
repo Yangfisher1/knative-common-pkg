@@ -20,20 +20,20 @@ import (
 	"context"
 
 	// Injection stuff
-	kubeclient "knative.dev/pkg/client/injection/kube/client"
-	mwhinformer "knative.dev/pkg/client/injection/kube/informers/admissionregistration/v1/mutatingwebhookconfiguration"
-	secretinformer "knative.dev/pkg/injection/clients/namespacedkube/informers/core/v1/secret"
-	"knative.dev/pkg/logging"
-	pkgreconciler "knative.dev/pkg/reconciler"
+	kubeclient "github.com/Yangfisher1/knative-common-pkg/client/injection/kube/client"
+	mwhinformer "github.com/Yangfisher1/knative-common-pkg/client/injection/kube/informers/admissionregistration/v1/mutatingwebhookconfiguration"
+	secretinformer "github.com/Yangfisher1/knative-common-pkg/injection/clients/namespacedkube/informers/core/v1/secret"
+	"github.com/Yangfisher1/knative-common-pkg/logging"
+	pkgreconciler "github.com/Yangfisher1/knative-common-pkg/reconciler"
 
 	"k8s.io/apimachinery/pkg/runtime/schema"
 	"k8s.io/apimachinery/pkg/types"
 	"k8s.io/client-go/tools/cache"
 
-	"knative.dev/pkg/controller"
-	"knative.dev/pkg/system"
-	"knative.dev/pkg/webhook"
-	"knative.dev/pkg/webhook/resourcesemantics"
+	"github.com/Yangfisher1/knative-common-pkg/controller"
+	"github.com/Yangfisher1/knative-common-pkg/system"
+	"github.com/Yangfisher1/knative-common-pkg/webhook"
+	"github.com/Yangfisher1/knative-common-pkg/webhook/resourcesemantics"
 )
 
 // NewAdmissionController constructs a reconciler

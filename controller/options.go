@@ -16,7 +16,7 @@ limitations under the License.
 
 package controller
 
-import "knative.dev/pkg/reconciler"
+import "github.com/Yangfisher1/knative-common-pkg/reconciler"
 
 // Options is additional resources a Controller might want to use depending
 // on implementation.

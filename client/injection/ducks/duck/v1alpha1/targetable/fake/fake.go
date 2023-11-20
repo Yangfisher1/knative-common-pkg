@@ -19,8 +19,8 @@ limitations under the License.
 package fake
 
 import (
-	targetable "knative.dev/pkg/client/injection/ducks/duck/v1alpha1/targetable"
-	injection "knative.dev/pkg/injection"
+	targetable "github.com/Yangfisher1/knative-common-pkg/client/injection/ducks/duck/v1alpha1/targetable"
+	injection "github.com/Yangfisher1/knative-common-pkg/injection"
 )
 
 var Get = targetable.Get

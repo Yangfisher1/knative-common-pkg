@@ -21,10 +21,10 @@ package fake
 import (
 	context "context"
 
-	certificatesigningrequest "knative.dev/pkg/client/injection/kube/informers/certificates/v1beta1/certificatesigningrequest"
-	fake "knative.dev/pkg/client/injection/kube/informers/factory/fake"
-	controller "knative.dev/pkg/controller"
-	injection "knative.dev/pkg/injection"
+	certificatesigningrequest "github.com/Yangfisher1/knative-common-pkg/client/injection/kube/informers/certificates/v1beta1/certificatesigningrequest"
+	fake "github.com/Yangfisher1/knative-common-pkg/client/injection/kube/informers/factory/fake"
+	controller "github.com/Yangfisher1/knative-common-pkg/controller"
+	injection "github.com/Yangfisher1/knative-common-pkg/injection"
 )
 
 var Get = certificatesigningrequest.Get

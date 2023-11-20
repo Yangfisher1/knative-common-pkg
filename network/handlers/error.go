@@ -16,9 +16,10 @@ limitations under the License.
 
 package handlers
 
-import "knative.dev/pkg/network"
+import "github.com/Yangfisher1/knative-common-pkg/network"
 
 // Error sets up a handler suitable for use with the ErrorHandler field on
 // httputil's reverse proxy, which logs /proc/net/sockstat data.
+//
 //nolint:staticcheck // We actually want to mirror this.
 var Error = network.ErrorHandler

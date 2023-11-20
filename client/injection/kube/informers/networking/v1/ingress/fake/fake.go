@@ -21,10 +21,10 @@ package fake
 import (
 	context "context"
 
-	fake "knative.dev/pkg/client/injection/kube/informers/factory/fake"
-	ingress "knative.dev/pkg/client/injection/kube/informers/networking/v1/ingress"
-	controller "knative.dev/pkg/controller"
-	injection "knative.dev/pkg/injection"
+	fake "github.com/Yangfisher1/knative-common-pkg/client/injection/kube/informers/factory/fake"
+	ingress "github.com/Yangfisher1/knative-common-pkg/client/injection/kube/informers/networking/v1/ingress"
+	controller "github.com/Yangfisher1/knative-common-pkg/controller"
+	injection "github.com/Yangfisher1/knative-common-pkg/injection"
 )
 
 var Get = ingress.Get

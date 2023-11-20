@@ -19,11 +19,11 @@ package tracing_test
 import (
 	"testing"
 
-	"knative.dev/pkg/depcheck"
+	"github.com/Yangfisher1/knative-common-pkg/depcheck"
 )
 
 func TestNoDeps(t *testing.T) {
 	depcheck.AssertNoDependency(t, map[string][]string{
-		"knative.dev/pkg/tracing": depcheck.KnownHeavyDependencies,
+		"github.com/Yangfisher1/knative-common-pkg/tracing": depcheck.KnownHeavyDependencies,
 	})
 }

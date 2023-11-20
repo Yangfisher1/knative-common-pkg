@@ -20,9 +20,9 @@ import (
 	"context"
 	"testing"
 
+	"github.com/Yangfisher1/knative-common-pkg/apis"
 	"github.com/google/go-cmp/cmp"
 	corev1 "k8s.io/api/core/v1"
-	"knative.dev/pkg/apis"
 )
 
 func TestStatusGetCondition(t *testing.T) {

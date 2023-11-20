@@ -1,13 +1,13 @@
 ## Knative Webhooks
 
 Knative provides infrastructure for authoring webhooks under
-`knative.dev/pkg/webhook` and has a few built-in helpers for certain common
+`github.com/Yangfisher1/knative-common-pkg/webhook` and has a few built-in helpers for certain common
 admission control scenarios. The built-in admission controllers are:
 
 1. Resource validation and defaulting (builds around `apis.Validatable` and
-   `apis.Defaultable` under `knative.dev/pkg/apis`).
+   `apis.Defaultable` under `github.com/Yangfisher1/knative-common-pkg/apis`).
 2. ConfigMap validation, which builds around similar patterns from
-   `knative.dev/pkg/configmap` (in particular the `store` concept)
+   `github.com/Yangfisher1/knative-common-pkg/configmap` (in particular the `store` concept)
 
 To illustrate standing up the webhook, let's start with one of these built-in
 admission controllers and then talk about how you can write your own admission
@@ -15,7 +15,7 @@ controller.
 
 ## Standing up a Webhook from an Admission Controller
 
-We provide facilities in `knative.dev/pkg/injection/sharedmain` to try and
+We provide facilities in `github.com/Yangfisher1/knative-common-pkg/injection/sharedmain` to try and
 eliminate much of the boilerplate involved in standing up a webhook. For this
 example we will show how to stand up the webhook using the built-in admission
 controller for validating and defaulting resources.
@@ -76,13 +76,13 @@ func main() {
 ```
 
 There is also a config map validation admission controller built in under
-`knative.dev/pkg/webhook/configmaps`.
+`github.com/Yangfisher1/knative-common-pkg/webhook/configmaps`.
 
 ## Writing new Admission Controllers
 
 To implement your own admission controller akin to the resource defaulting and
 validation controller above, you implement a
-`knative.dev/pkg/controller.Reconciler` as with any you would with any other
+`github.com/Yangfisher1/knative-common-pkg/controller.Reconciler` as with any you would with any other
 type of controller, but the `Reconciler` that gets embedded in the
 `*controller.Impl` should _also_ implement:
 

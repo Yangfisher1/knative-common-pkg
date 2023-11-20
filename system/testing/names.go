@@ -19,7 +19,7 @@ package testing
 import (
 	"os"
 
-	"knative.dev/pkg/system"
+	"github.com/Yangfisher1/knative-common-pkg/system"
 )
 
 func init() {

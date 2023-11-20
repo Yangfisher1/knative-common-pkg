@@ -19,13 +19,13 @@ package v1
 import (
 	"time"
 
+	"github.com/Yangfisher1/knative-common-pkg/apis/duck/ducktypes"
 	corev1 "k8s.io/api/core/v1"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/apimachinery/pkg/runtime"
 	"k8s.io/apimachinery/pkg/runtime/schema"
-	"knative.dev/pkg/apis/duck/ducktypes"
 
-	"knative.dev/pkg/apis"
+	"github.com/Yangfisher1/knative-common-pkg/apis"
 )
 
 // KRShaped is an interface for retrieving the duck elements of an arbitrary resource.

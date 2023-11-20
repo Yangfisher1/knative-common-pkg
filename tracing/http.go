@@ -19,10 +19,10 @@ package tracing
 import (
 	"net/http"
 
+	"github.com/Yangfisher1/knative-common-pkg/tracing/propagation/tracecontextb3"
 	"go.opencensus.io/plugin/ochttp"
 	"go.opencensus.io/trace"
 	"k8s.io/apimachinery/pkg/util/sets"
-	"knative.dev/pkg/tracing/propagation/tracecontextb3"
 )
 
 var (

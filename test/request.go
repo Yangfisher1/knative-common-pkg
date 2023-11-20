@@ -23,9 +23,9 @@ import (
 	"net/url"
 	"time"
 
+	"github.com/Yangfisher1/knative-common-pkg/test/logging"
+	"github.com/Yangfisher1/knative-common-pkg/test/spoof"
 	"k8s.io/client-go/kubernetes"
-	"knative.dev/pkg/test/logging"
-	"knative.dev/pkg/test/spoof"
 )
 
 // RequestOption enables configuration of requests

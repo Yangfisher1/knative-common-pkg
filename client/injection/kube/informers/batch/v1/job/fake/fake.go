@@ -21,10 +21,10 @@ package fake
 import (
 	context "context"
 
-	job "knative.dev/pkg/client/injection/kube/informers/batch/v1/job"
-	fake "knative.dev/pkg/client/injection/kube/informers/factory/fake"
-	controller "knative.dev/pkg/controller"
-	injection "knative.dev/pkg/injection"
+	job "github.com/Yangfisher1/knative-common-pkg/client/injection/kube/informers/batch/v1/job"
+	fake "github.com/Yangfisher1/knative-common-pkg/client/injection/kube/informers/factory/fake"
+	controller "github.com/Yangfisher1/knative-common-pkg/controller"
+	injection "github.com/Yangfisher1/knative-common-pkg/injection"
 )
 
 var Get = job.Get

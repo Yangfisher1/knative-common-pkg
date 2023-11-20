@@ -23,7 +23,7 @@ import (
 	"strings"
 	"testing"
 
-	"knative.dev/pkg/depcheck"
+	"github.com/Yangfisher1/knative-common-pkg/depcheck"
 )
 
 // TestExample doesn't follow the Go Example style because it isn't well
@@ -34,24 +34,24 @@ func TestExample(t *testing.T) {
 	// known "heavy" packages, which pull in large amount of code or data.
 	depcheck.AssertNoDependency(t, map[string][]string{
 		// Our duck types shouldn't depend on fuzzers.
-		"knative.dev/pkg/apis/duck/v1": {
+		"github.com/Yangfisher1/knative-common-pkg/apis/duck/v1": {
 			"k8s.io/apimachinery/pkg/api/apitesting/fuzzer",
 		},
-		"knative.dev/pkg/apis/duck/v1beta1": {
+		"github.com/Yangfisher1/knative-common-pkg/apis/duck/v1beta1": {
 			"k8s.io/apimachinery/pkg/api/apitesting/fuzzer",
 		},
 
 		// We intentionally avoid using the Kubernetes "sets" package.
-		"knative.dev/pkg/depcheck": {
+		"github.com/Yangfisher1/knative-common-pkg/depcheck": {
 			"k8s.io/apimachinery/pkg/util/sets",
 		},
 	})
 
 	// Sample failure case, duck clearly relies on corev1 for all assortment of things.
-	if err := depcheck.CheckNoDependency("knative.dev/pkg/apis/duck", []string{"k8s.io/api/core/v1"}); err == nil {
+	if err := depcheck.CheckNoDependency("github.com/Yangfisher1/knative-common-pkg/apis/duck", []string{"k8s.io/api/core/v1"}); err == nil {
 		t.Error("CheckNoDependency() = nil, wanted error")
-	} else if !strings.Contains(err.Error(), "knative.dev/pkg/tracker") {
-		t.Errorf("CheckNoDependency() = %v, expected to contain: %v", err, "knative.dev/pkg/tracker")
+	} else if !strings.Contains(err.Error(), "github.com/Yangfisher1/knative-common-pkg/tracker") {
+		t.Errorf("CheckNoDependency() = %v, expected to contain: %v", err, "github.com/Yangfisher1/knative-common-pkg/tracker")
 	} else {
 		t.Log("CheckNoDependency() =", err)
 	}
@@ -60,18 +60,18 @@ func TestExample(t *testing.T) {
 	// the external dependencies very carefully.
 	depcheck.AssertOnlyDependencies(t, map[string][]string{
 		// Example libraries with very limited dependencies.
-		"knative.dev/pkg/pool": {
+		"github.com/Yangfisher1/knative-common-pkg/pool": {
 			"context",
 			"sync",
 			"golang.org/x/sync/errgroup",
 		},
-		"knative.dev/pkg/ptr": {
+		"github.com/Yangfisher1/knative-common-pkg/ptr": {
 			"time",
 		},
 	})
 
 	// Sample failure case, doesn't include transitive dependencies!
-	if err := depcheck.CheckOnlyDependencies("knative.dev/pkg/depcheck", map[string]struct{}{
+	if err := depcheck.CheckOnlyDependencies("github.com/Yangfisher1/knative-common-pkg/depcheck", map[string]struct{}{
 		"fmt":                            {},
 		"sort":                           {},
 		"strings":                        {},

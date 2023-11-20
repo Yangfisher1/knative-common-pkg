@@ -24,9 +24,11 @@ import (
 	"testing"
 
 	// injection
-	_ "knative.dev/pkg/client/injection/apiextensions/informers/apiextensions/v1/customresourcedefinition/fake"
-	_ "knative.dev/pkg/injection/clients/namespacedkube/informers/core/v1/secret/fake"
+	_ "github.com/Yangfisher1/knative-common-pkg/client/injection/apiextensions/informers/apiextensions/v1/customresourcedefinition/fake"
+	_ "github.com/Yangfisher1/knative-common-pkg/injection/clients/namespacedkube/informers/core/v1/secret/fake"
 
+	"github.com/Yangfisher1/knative-common-pkg/webhook"
+	"github.com/Yangfisher1/knative-common-pkg/webhook/resourcesemantics/conversion/internal"
 	"github.com/google/go-cmp/cmp"
 	"github.com/google/go-cmp/cmp/cmpopts"
 	apixv1 "k8s.io/apiextensions-apiserver/pkg/apis/apiextensions/v1"
@@ -34,10 +36,8 @@ import (
 	"k8s.io/apimachinery/pkg/apis/meta/v1/unstructured"
 	"k8s.io/apimachinery/pkg/runtime"
 	"k8s.io/apimachinery/pkg/runtime/schema"
-	"knative.dev/pkg/webhook"
-	"knative.dev/pkg/webhook/resourcesemantics/conversion/internal"
 
-	. "knative.dev/pkg/reconciler/testing"
+	. "github.com/Yangfisher1/knative-common-pkg/reconciler/testing"
 )
 
 var (

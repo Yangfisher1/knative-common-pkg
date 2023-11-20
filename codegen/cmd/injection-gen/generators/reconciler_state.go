@@ -65,7 +65,7 @@ func (g *reconcilerStateGenerator) GenerateType(c *generator.Context, t *types.T
 		}),
 		"fmtErrorf": c.Universe.Package("fmt").Function("Errorf"),
 		"reconcilerLeaderAware": c.Universe.Type(types.Name{
-			Package: "knative.dev/pkg/reconciler",
+			Package: "github.com/Yangfisher1/knative-common-pkg/reconciler",
 			Name:    "LeaderAware",
 		}),
 		"typesNamespacedName": c.Universe.Type(types.Name{
@@ -73,15 +73,15 @@ func (g *reconcilerStateGenerator) GenerateType(c *generator.Context, t *types.T
 			Name:    "NamespacedName",
 		}),
 		"doReconcileKind": c.Universe.Type(types.Name{
-			Package: "knative.dev/pkg/reconciler",
+			Package: "github.com/Yangfisher1/knative-common-pkg/reconciler",
 			Name:    "DoReconcileKind",
 		}),
 		"doObserveKind": c.Universe.Type(types.Name{
-			Package: "knative.dev/pkg/reconciler",
+			Package: "github.com/Yangfisher1/knative-common-pkg/reconciler",
 			Name:    "DoObserveKind",
 		}),
 		"doFinalizeKind": c.Universe.Type(types.Name{
-			Package: "knative.dev/pkg/reconciler",
+			Package: "github.com/Yangfisher1/knative-common-pkg/reconciler",
 			Name:    "DoFinalizeKind",
 		}),
 	}

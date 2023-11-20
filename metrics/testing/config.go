@@ -19,7 +19,7 @@ package testing
 import (
 	"os"
 
-	"knative.dev/pkg/metrics"
+	"github.com/Yangfisher1/knative-common-pkg/metrics"
 )
 
 func init() {

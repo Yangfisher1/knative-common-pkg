@@ -19,7 +19,7 @@ package upgrade_test
 import (
 	"testing"
 
-	"knative.dev/pkg/test/upgrade"
+	"github.com/Yangfisher1/knative-common-pkg/test/upgrade"
 )
 
 const (

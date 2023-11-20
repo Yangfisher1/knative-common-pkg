@@ -17,10 +17,10 @@ limitations under the License.
 package v1alpha1
 
 import (
+	pub "github.com/Yangfisher1/knative-common-pkg/apis/test/pub"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/apimachinery/pkg/runtime"
 	"k8s.io/apimachinery/pkg/runtime/schema"
-	pub "knative.dev/pkg/apis/test/pub"
 )
 
 // SchemeGroupVersion is group version used to register these objects

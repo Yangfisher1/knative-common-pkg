@@ -22,10 +22,10 @@ import (
 	"fmt"
 	"net/http"
 
+	"github.com/Yangfisher1/knative-common-pkg/apis"
+	"github.com/Yangfisher1/knative-common-pkg/logging"
 	"go.uber.org/zap"
 	apixv1 "k8s.io/apiextensions-apiserver/pkg/apis/apiextensions/v1"
-	"knative.dev/pkg/apis"
-	"knative.dev/pkg/logging"
 )
 
 // ConversionController provides the interface for different conversion controllers

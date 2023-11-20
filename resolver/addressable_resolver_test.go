@@ -30,14 +30,14 @@ import (
 	"k8s.io/apimachinery/pkg/types"
 	"k8s.io/client-go/kubernetes/scheme"
 
-	"knative.dev/pkg/apis"
-	duckv1 "knative.dev/pkg/apis/duck/v1"
-	duckv1alpha1 "knative.dev/pkg/apis/duck/v1alpha1"
-	duckv1beta1 "knative.dev/pkg/apis/duck/v1beta1"
-	"knative.dev/pkg/client/injection/ducks/duck/v1/addressable"
-	fakedynamicclient "knative.dev/pkg/injection/clients/dynamicclient/fake"
-	"knative.dev/pkg/resolver"
-	"knative.dev/pkg/tracker"
+	"github.com/Yangfisher1/knative-common-pkg/apis"
+	duckv1 "github.com/Yangfisher1/knative-common-pkg/apis/duck/v1"
+	duckv1alpha1 "github.com/Yangfisher1/knative-common-pkg/apis/duck/v1alpha1"
+	duckv1beta1 "github.com/Yangfisher1/knative-common-pkg/apis/duck/v1beta1"
+	"github.com/Yangfisher1/knative-common-pkg/client/injection/ducks/duck/v1/addressable"
+	fakedynamicclient "github.com/Yangfisher1/knative-common-pkg/injection/clients/dynamicclient/fake"
+	"github.com/Yangfisher1/knative-common-pkg/resolver"
+	"github.com/Yangfisher1/knative-common-pkg/tracker"
 )
 
 const (

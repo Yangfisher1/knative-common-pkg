@@ -13,7 +13,7 @@ This is a guide to start using `logstream` in your e2e testing.
    [this](https://github.com/knative/serving/blob/e797247322b5aa35001152d2a2715dbc20a86cc4/test/conformance.go#L20-L23)
 
 2. Test resources must be named with
-   [`test.ObjectNameForTest(t)`](https://github.com/knative/networking/blob/40ef99aa5db0d38730a89a1de7e5b28b8ef6eed5/vendor/knative.dev/pkg/test/helpers/name.go#L50)
+   [`test.ObjectNameForTest(t)`](https://github.com/knative/networking/blob/40ef99aa5db0d38730a89a1de7e5b28b8ef6eed5/vendor/github.com/Yangfisher1/knative-common-pkg/test/helpers/name.go#L50)
 
 3. At the start of your test add: `t.Cleanup(logstream.Start(t))`
 

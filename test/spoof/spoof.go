@@ -29,12 +29,12 @@ import (
 	"net/url"
 	"time"
 
+	"github.com/Yangfisher1/knative-common-pkg/test/ingress"
+	"github.com/Yangfisher1/knative-common-pkg/test/logging"
+	"github.com/Yangfisher1/knative-common-pkg/test/zipkin"
+	"github.com/Yangfisher1/knative-common-pkg/tracing/propagation/tracecontextb3"
 	"k8s.io/apimachinery/pkg/util/wait"
 	"k8s.io/client-go/kubernetes"
-	"knative.dev/pkg/test/ingress"
-	"knative.dev/pkg/test/logging"
-	"knative.dev/pkg/test/zipkin"
-	"knative.dev/pkg/tracing/propagation/tracecontextb3"
 
 	"go.opencensus.io/plugin/ochttp"
 	"go.opencensus.io/trace"

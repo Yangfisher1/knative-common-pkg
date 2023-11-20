@@ -21,10 +21,10 @@ package fake
 import (
 	context "context"
 
-	endpointslice "knative.dev/pkg/client/injection/kube/informers/discovery/v1/endpointslice"
-	fake "knative.dev/pkg/client/injection/kube/informers/factory/fake"
-	controller "knative.dev/pkg/controller"
-	injection "knative.dev/pkg/injection"
+	endpointslice "github.com/Yangfisher1/knative-common-pkg/client/injection/kube/informers/discovery/v1/endpointslice"
+	fake "github.com/Yangfisher1/knative-common-pkg/client/injection/kube/informers/factory/fake"
+	controller "github.com/Yangfisher1/knative-common-pkg/controller"
+	injection "github.com/Yangfisher1/knative-common-pkg/injection"
 )
 
 var Get = endpointslice.Get

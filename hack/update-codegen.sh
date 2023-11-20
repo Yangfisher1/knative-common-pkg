@@ -34,7 +34,7 @@ group "Kubernetes Codegen"
 
 # Knative Injection
 ${REPO_ROOT_DIR}/hack/generate-knative.sh "injection" \
-  knative.dev/pkg/client knative.dev/pkg/apis \
+  github.com/Yangfisher1/knative-common-pkg/client github.com/Yangfisher1/knative-common-pkg/apis \
   "duck:v1alpha1,v1beta1,v1" \
   --go-header-file ${REPO_ROOT_DIR}/hack/boilerplate/boilerplate.go.txt
 
@@ -43,7 +43,7 @@ ${REPO_ROOT_DIR}/hack/generate-knative.sh "injection" \
 K8S_TYPES=$(find ./vendor/k8s.io/api -type d -path '*/*/*/*/*/*' | cut -d'/' -f 5-6 | sort | sed 's@/@:@g' |
   grep -v "admission:" | grep -v "imagepolicy:" | grep -v "abac:" | grep -v "componentconfig:")
 
-OUTPUT_PKG="knative.dev/pkg/client/injection/kube" \
+OUTPUT_PKG="github.com/Yangfisher1/knative-common-pkg/client/injection/kube" \
 VERSIONED_CLIENTSET_PKG="k8s.io/client-go/kubernetes" \
 EXTERNAL_INFORMER_PKG="k8s.io/client-go/informers" \
   ${REPO_ROOT_DIR}/hack/generate-knative.sh "injection" \
@@ -53,7 +53,7 @@ EXTERNAL_INFORMER_PKG="k8s.io/client-go/informers" \
     --go-header-file ${REPO_ROOT_DIR}/hack/boilerplate/boilerplate.go.txt \
     --force-genreconciler-kinds "Namespace,ConfigMap,Deployment,Secret,Pod,CronJob,NetworkPolicy,Node,ValidatingWebhookConfiguration,MutatingWebhookConfiguration"
 
-OUTPUT_PKG="knative.dev/pkg/client/injection/apiextensions" \
+OUTPUT_PKG="github.com/Yangfisher1/knative-common-pkg/client/injection/apiextensions" \
 VERSIONED_CLIENTSET_PKG="k8s.io/apiextensions-apiserver/pkg/client/clientset/clientset" \
   ${REPO_ROOT_DIR}/hack/generate-knative.sh "injection" \
     k8s.io/apiextensions-apiserver/pkg/client \
@@ -66,20 +66,20 @@ group "Knative Codegen"
 
 # Only deepcopy the Duck types, as they are not real resources.
 ${CODEGEN_PKG}/generate-groups.sh "deepcopy" \
-  knative.dev/pkg/client knative.dev/pkg/apis \
+  github.com/Yangfisher1/knative-common-pkg/client github.com/Yangfisher1/knative-common-pkg/apis \
   "duck:v1alpha1,v1beta1,v1" \
   --go-header-file ${REPO_ROOT_DIR}/hack/boilerplate/boilerplate.go.txt
 
 # Depends on generate-groups.sh to install bin/deepcopy-gen
 go run k8s.io/code-generator/cmd/deepcopy-gen  --input-dirs \
   $(echo \
-  knative.dev/pkg/apis \
-  knative.dev/pkg/tracker \
-  knative.dev/pkg/logging \
-  knative.dev/pkg/metrics \
-  knative.dev/pkg/testing \
-  knative.dev/pkg/testing/duck \
-  knative.dev/pkg/webhook/resourcesemantics/conversion/internal \
+  github.com/Yangfisher1/knative-common-pkg/apis \
+  github.com/Yangfisher1/knative-common-pkg/tracker \
+  github.com/Yangfisher1/knative-common-pkg/logging \
+  github.com/Yangfisher1/knative-common-pkg/metrics \
+  github.com/Yangfisher1/knative-common-pkg/testing \
+  github.com/Yangfisher1/knative-common-pkg/testing/duck \
+  github.com/Yangfisher1/knative-common-pkg/webhook/resourcesemantics/conversion/internal \
   | sed "s/ /,/g") \
   -O zz_generated.deepcopy \
   --go-header-file ${REPO_ROOT_DIR}/hack/boilerplate/boilerplate.go.txt

@@ -21,11 +21,11 @@ import (
 	"strconv"
 	"time"
 
+	"github.com/Yangfisher1/knative-common-pkg/metrics"
 	"go.opencensus.io/stats"
 	"go.opencensus.io/stats/view"
 	"go.opencensus.io/tag"
 	admissionv1 "k8s.io/api/admission/v1"
-	"knative.dev/pkg/metrics"
 )
 
 const (

@@ -21,10 +21,10 @@ package fake
 import (
 	context "context"
 
-	customresourcedefinition "knative.dev/pkg/client/injection/apiextensions/informers/apiextensions/v1beta1/customresourcedefinition"
-	fake "knative.dev/pkg/client/injection/apiextensions/informers/factory/fake"
-	controller "knative.dev/pkg/controller"
-	injection "knative.dev/pkg/injection"
+	customresourcedefinition "github.com/Yangfisher1/knative-common-pkg/client/injection/apiextensions/informers/apiextensions/v1beta1/customresourcedefinition"
+	fake "github.com/Yangfisher1/knative-common-pkg/client/injection/apiextensions/informers/factory/fake"
+	controller "github.com/Yangfisher1/knative-common-pkg/controller"
+	injection "github.com/Yangfisher1/knative-common-pkg/injection"
 )
 
 var Get = customresourcedefinition.Get

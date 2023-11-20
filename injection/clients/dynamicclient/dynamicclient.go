@@ -22,8 +22,8 @@ import (
 	"k8s.io/client-go/dynamic"
 	"k8s.io/client-go/rest"
 
-	"knative.dev/pkg/injection"
-	"knative.dev/pkg/logging"
+	"github.com/Yangfisher1/knative-common-pkg/injection"
+	"github.com/Yangfisher1/knative-common-pkg/logging"
 )
 
 func init() {

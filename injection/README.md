@@ -12,9 +12,9 @@ with the following controller constructor:
 import (
 	"context"
 
-	"knative.dev/pkg/configmap"
-	"knative.dev/pkg/controller"
-	"knative.dev/pkg/logging"
+	"github.com/Yangfisher1/knative-common-pkg/configmap"
+	"github.com/Yangfisher1/knative-common-pkg/controller"
+	"github.com/Yangfisher1/knative-common-pkg/logging"
 	kindreconciler "knative.dev/<repo>/pkg/client/injection/reconciler/<clientgroup>/<version>/<resource>"
 )
 
@@ -56,7 +56,7 @@ type ExampleType struct {
 Update `NewController` as follows:
 
 ```go
-"knative.dev/pkg/controller"
+"github.com/Yangfisher1/knative-common-pkg/controller"
 ...
 impl := controller.NewContext(ctx, c, controller.ControllerOptions{
 	Logger: logger,
@@ -124,8 +124,8 @@ these below).
 import (
 	// These are how you access a client or informer off of the "ctx" passed
 	// to set up the controller.
-	"knative.dev/pkg/client/injection/kube/client"
-	svcinformer "knative.dev/pkg/client/injection/kube/informers/core/v1/service"
+	"github.com/Yangfisher1/knative-common-pkg/client/injection/kube/client"
+	svcinformer "github.com/Yangfisher1/knative-common-pkg/client/injection/kube/informers/core/v1/service"
 
 	// Other imports ...
 )
@@ -171,11 +171,11 @@ import (
 	"testing"
 
 	// Link the fakes for any informers our controller accesses.
-	_ "knative.dev/pkg/client/injection/kube/informers/core/v1/service/fake"
+	_ "github.com/Yangfisher1/knative-common-pkg/client/injection/kube/informers/core/v1/service/fake"
 
 	"k8s.io/client-go/rest"
-	"knative.dev/pkg/injection"
-	logtesting "knative.dev/pkg/logging/testing"
+	"github.com/Yangfisher1/knative-common-pkg/injection"
+	logtesting "github.com/Yangfisher1/knative-common-pkg/logging/testing"
 )
 
 func TestFoo(t *testing.T) {
@@ -196,11 +196,11 @@ The fake clients also support manually setting up contexts seeded with objects:
 import (
 	"testing"
 
-	fakekubeclient "knative.dev/pkg/client/injection/kube/client/fake"
+	fakekubeclient "github.com/Yangfisher1/knative-common-pkg/client/injection/kube/client/fake"
 
 	"k8s.io/client-go/rest"
-	"knative.dev/pkg/injection"
-	logtesting "knative.dev/pkg/logging/testing"
+	"github.com/Yangfisher1/knative-common-pkg/injection"
+	logtesting "github.com/Yangfisher1/knative-common-pkg/logging/testing"
 )
 
 func TestFoo(t *testing.T) {
@@ -239,7 +239,7 @@ import (
 	"github.com/knative/baz/pkg/reconciler/blah"
 
 	// This defines the shared main for injected controllers.
-	"knative.dev/pkg/injection/sharedmain"
+	"github.com/Yangfisher1/knative-common-pkg/injection/sharedmain"
 )
 
 func main() {
@@ -271,7 +271,7 @@ group):
 
 ```shell
 
-KNATIVE_CODEGEN_PKG=${KNATIVE_CODEGEN_PKG:-$(cd ${REPO_ROOT}; ls -d -1 ./vendor/knative.dev/pkg 2>/dev/null || echo ../pkg)}
+KNATIVE_CODEGEN_PKG=${KNATIVE_CODEGEN_PKG:-$(cd ${REPO_ROOT}; ls -d -1 ./vendor/github.com/Yangfisher1/knative-common-pkg 2>/dev/null || echo ../pkg)}
 
 ${KNATIVE_CODEGEN_PKG}/hack/generate-knative.sh "injection" \
   github.com/knative/sample-controller/pkg/client github.com/knative/sample-controller/pkg/apis \
@@ -285,14 +285,14 @@ To ensure the appropriate tooling is vendored, add the following to
 
 ```toml
 required = [
-  "knative.dev/pkg/codegen/cmd/injection-gen",
+  "github.com/Yangfisher1/knative-common-pkg/codegen/cmd/injection-gen",
 ]
 
 # .. Constraints
 
 # Keeps things like the generate-knative.sh script
 [[prune.project]]
-  name = "knative.dev/pkg"
+  name = "github.com/Yangfisher1/knative-common-pkg"
   unused-packages = false
   non-go = false
 ```
@@ -406,7 +406,7 @@ controller's constructor:
 
 ```go
 kindreconciler "knative.dev/<repo>/pkg/client/injection/reconciler/<clientgroup>/<version>/<resource>"
-pkgreconciler "knative.dev/pkg/reconciler"
+pkgreconciler "github.com/Yangfisher1/knative-common-pkg/reconciler"
 ...
 impl := kindreconciler.NewImpl(ctx, c, func(impl *controller.Impl) controller.Options {
 	return controller.Options{

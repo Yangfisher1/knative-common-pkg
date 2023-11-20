@@ -22,9 +22,9 @@ import (
 	"go.uber.org/zap"
 	"k8s.io/client-go/rest"
 
-	"knative.dev/pkg/controller"
-	"knative.dev/pkg/logging"
-	"knative.dev/pkg/signals"
+	"github.com/Yangfisher1/knative-common-pkg/controller"
+	"github.com/Yangfisher1/knative-common-pkg/logging"
+	"github.com/Yangfisher1/knative-common-pkg/signals"
 )
 
 // EnableInjectionOrDie enables Knative Client Injection, and provides a
@@ -34,9 +34,11 @@ import (
 //
 // Typical integration:
 // ```go
-//   ctx, startInformers := injection.EnableInjectionOrDie(signals.NewContext(), nil)
-//   ... start watches with informers, if required ...
-//   startInformers()
+//
+//	ctx, startInformers := injection.EnableInjectionOrDie(signals.NewContext(), nil)
+//	... start watches with informers, if required ...
+//	startInformers()
+//
 // ```
 func EnableInjectionOrDie(ctx context.Context, cfg *rest.Config) (context.Context, func()) {
 	if ctx == nil {

@@ -23,9 +23,9 @@ import (
 	"testing"
 	"unicode"
 
+	"github.com/Yangfisher1/knative-common-pkg/configmap"
 	corev1 "k8s.io/api/core/v1"
 	"k8s.io/apimachinery/pkg/util/sets"
-	"knative.dev/pkg/configmap"
 	"sigs.k8s.io/yaml"
 )
 

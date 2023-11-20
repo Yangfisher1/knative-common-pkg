@@ -20,9 +20,9 @@ import (
 	"context"
 	"testing"
 
+	"github.com/Yangfisher1/knative-common-pkg/apis"
 	batchv1 "k8s.io/api/batch/v1"
 	corev1 "k8s.io/api/core/v1"
-	"knative.dev/pkg/apis"
 )
 
 func TestCronJobValidation(t *testing.T) {

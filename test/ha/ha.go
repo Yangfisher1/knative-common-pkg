@@ -28,7 +28,7 @@ import (
 	"k8s.io/apimachinery/pkg/util/wait"
 	"k8s.io/client-go/kubernetes"
 
-	"knative.dev/pkg/test/logging"
+	"github.com/Yangfisher1/knative-common-pkg/test/logging"
 )
 
 func countingRFind(wr rune, wc int) func(rune) bool {

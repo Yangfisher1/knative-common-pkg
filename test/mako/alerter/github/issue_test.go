@@ -22,8 +22,8 @@ import (
 	"testing"
 	"time"
 
-	"knative.dev/pkg/test/ghutil"
-	"knative.dev/pkg/test/ghutil/fakeghutil"
+	"github.com/Yangfisher1/knative-common-pkg/test/ghutil"
+	"github.com/Yangfisher1/knative-common-pkg/test/ghutil/fakeghutil"
 )
 
 var gih *IssueHandler

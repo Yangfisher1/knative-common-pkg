@@ -19,7 +19,7 @@ package v1
 import (
 	"context"
 
-	"knative.dev/pkg/apis"
+	"github.com/Yangfisher1/knative-common-pkg/apis"
 )
 
 // Destination represents a target of an invocation over HTTP.

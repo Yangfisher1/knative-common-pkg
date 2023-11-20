@@ -21,10 +21,10 @@ package fake
 import (
 	context "context"
 
-	replicaset "knative.dev/pkg/client/injection/kube/informers/extensions/v1beta1/replicaset"
-	fake "knative.dev/pkg/client/injection/kube/informers/factory/fake"
-	controller "knative.dev/pkg/controller"
-	injection "knative.dev/pkg/injection"
+	replicaset "github.com/Yangfisher1/knative-common-pkg/client/injection/kube/informers/extensions/v1beta1/replicaset"
+	fake "github.com/Yangfisher1/knative-common-pkg/client/injection/kube/informers/factory/fake"
+	controller "github.com/Yangfisher1/knative-common-pkg/controller"
+	injection "github.com/Yangfisher1/knative-common-pkg/injection"
 )
 
 var Get = replicaset.Get

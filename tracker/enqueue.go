@@ -29,7 +29,7 @@ import (
 	"k8s.io/apimachinery/pkg/types"
 	"k8s.io/apimachinery/pkg/util/validation"
 
-	"knative.dev/pkg/kmeta"
+	"github.com/Yangfisher1/knative-common-pkg/kmeta"
 )
 
 // New returns an implementation of Interface that lets a Reconciler

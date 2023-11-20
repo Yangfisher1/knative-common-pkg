@@ -19,10 +19,10 @@ package duck
 import (
 	"context"
 
+	"github.com/Yangfisher1/knative-common-pkg/kmeta"
+	"github.com/Yangfisher1/knative-common-pkg/tracker"
 	"k8s.io/apimachinery/pkg/runtime/schema"
 	"k8s.io/client-go/tools/cache"
-	"knative.dev/pkg/kmeta"
-	"knative.dev/pkg/tracker"
 )
 
 // InformerFactory is used to create Informer/Lister pairs for a schema.GroupVersionResource

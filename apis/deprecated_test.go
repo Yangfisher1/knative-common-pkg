@@ -21,9 +21,9 @@ import (
 	"strings"
 	"testing"
 
-	"knative.dev/pkg/apis"
-	"knative.dev/pkg/ptr"
-	. "knative.dev/pkg/testing"
+	"github.com/Yangfisher1/knative-common-pkg/apis"
+	"github.com/Yangfisher1/knative-common-pkg/ptr"
+	. "github.com/Yangfisher1/knative-common-pkg/testing"
 )
 
 func TestCheckDeprecated(t *testing.T) {

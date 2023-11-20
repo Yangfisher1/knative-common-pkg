@@ -19,8 +19,8 @@ package v1beta1
 import (
 	"context"
 
+	"github.com/Yangfisher1/knative-common-pkg/apis"
 	corev1 "k8s.io/api/core/v1"
-	"knative.dev/pkg/apis"
 )
 
 // Destination represents a target of an invocation over HTTP.

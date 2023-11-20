@@ -19,8 +19,8 @@ limitations under the License.
 package fake
 
 import (
-	podspecable "knative.dev/pkg/client/injection/ducks/duck/v1/podspecable"
-	injection "knative.dev/pkg/injection"
+	podspecable "github.com/Yangfisher1/knative-common-pkg/client/injection/ducks/duck/v1/podspecable"
+	injection "github.com/Yangfisher1/knative-common-pkg/injection"
 )
 
 var Get = podspecable.Get

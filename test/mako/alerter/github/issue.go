@@ -23,8 +23,8 @@ import (
 
 	"github.com/google/go-github/v27/github"
 
-	"knative.dev/pkg/test/ghutil"
-	"knative.dev/pkg/test/helpers"
+	"github.com/Yangfisher1/knative-common-pkg/test/ghutil"
+	"github.com/Yangfisher1/knative-common-pkg/test/helpers"
 )
 
 const (

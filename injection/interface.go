@@ -22,8 +22,8 @@ import (
 
 	"k8s.io/client-go/rest"
 
-	"knative.dev/pkg/configmap"
-	"knative.dev/pkg/controller"
+	"github.com/Yangfisher1/knative-common-pkg/configmap"
+	"github.com/Yangfisher1/knative-common-pkg/controller"
 )
 
 // Interface is the interface for interacting with injection

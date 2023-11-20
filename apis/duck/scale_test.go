@@ -24,8 +24,8 @@ import (
 	"k8s.io/apimachinery/pkg/runtime"
 	"k8s.io/apimachinery/pkg/runtime/schema"
 
-	"knative.dev/pkg/apis/duck"
-	"knative.dev/pkg/ptr"
+	"github.com/Yangfisher1/knative-common-pkg/apis/duck"
+	"github.com/Yangfisher1/knative-common-pkg/ptr"
 )
 
 type Scalable struct {

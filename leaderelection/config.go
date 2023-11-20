@@ -29,7 +29,7 @@ import (
 	"k8s.io/apimachinery/pkg/util/uuid"
 	"k8s.io/client-go/tools/leaderelection/resourcelock"
 
-	cm "knative.dev/pkg/configmap"
+	cm "github.com/Yangfisher1/knative-common-pkg/configmap"
 )
 
 const (

@@ -20,10 +20,10 @@ import (
 	"context"
 	"testing"
 
+	"github.com/Yangfisher1/knative-common-pkg/apis"
 	"github.com/google/go-cmp/cmp"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/apimachinery/pkg/runtime/schema"
-	"knative.dev/pkg/apis"
 )
 
 func TestGroupVersionKind(t *testing.T) {

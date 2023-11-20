@@ -21,10 +21,10 @@ package mutatingwebhookconfiguration
 import (
 	fmt "fmt"
 
+	reconciler "github.com/Yangfisher1/knative-common-pkg/reconciler"
 	v1 "k8s.io/api/admissionregistration/v1"
 	types "k8s.io/apimachinery/pkg/types"
 	cache "k8s.io/client-go/tools/cache"
-	reconciler "knative.dev/pkg/reconciler"
 )
 
 // state is used to track the state of a reconciler in a single run.

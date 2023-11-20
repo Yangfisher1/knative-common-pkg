@@ -21,10 +21,10 @@ package hash
 import (
 	"sync"
 
+	"github.com/Yangfisher1/knative-common-pkg/reconciler"
 	lru "github.com/hashicorp/golang-lru"
 	"k8s.io/apimachinery/pkg/types"
 	"k8s.io/apimachinery/pkg/util/sets"
-	"knative.dev/pkg/reconciler"
 )
 
 var _ reconciler.Bucket = (*Bucket)(nil)

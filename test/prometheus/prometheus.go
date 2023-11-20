@@ -23,12 +23,12 @@ import (
 	"sync"
 	"time"
 
+	"github.com/Yangfisher1/knative-common-pkg/test/logging"
+	"github.com/Yangfisher1/knative-common-pkg/test/monitoring"
 	"github.com/prometheus/client_golang/api"
 	v1 "github.com/prometheus/client_golang/api/prometheus/v1"
 	"github.com/prometheus/common/model"
 	"k8s.io/client-go/kubernetes"
-	"knative.dev/pkg/test/logging"
-	"knative.dev/pkg/test/monitoring"
 )
 
 const (

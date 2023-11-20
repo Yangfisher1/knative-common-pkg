@@ -21,13 +21,13 @@ package fakeFilteredFactory
 import (
 	context "context"
 
+	fake "github.com/Yangfisher1/knative-common-pkg/client/injection/apiextensions/client/fake"
+	filtered "github.com/Yangfisher1/knative-common-pkg/client/injection/apiextensions/informers/factory/filtered"
+	controller "github.com/Yangfisher1/knative-common-pkg/controller"
+	injection "github.com/Yangfisher1/knative-common-pkg/injection"
+	logging "github.com/Yangfisher1/knative-common-pkg/logging"
 	externalversions "k8s.io/apiextensions-apiserver/pkg/client/informers/externalversions"
 	v1 "k8s.io/apimachinery/pkg/apis/meta/v1"
-	fake "knative.dev/pkg/client/injection/apiextensions/client/fake"
-	filtered "knative.dev/pkg/client/injection/apiextensions/informers/factory/filtered"
-	controller "knative.dev/pkg/controller"
-	injection "knative.dev/pkg/injection"
-	logging "knative.dev/pkg/logging"
 )
 
 var Get = filtered.Get

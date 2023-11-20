@@ -23,7 +23,7 @@ import (
 	"testing"
 	"time"
 
-	"knative.dev/pkg/network"
+	"github.com/Yangfisher1/knative-common-pkg/network"
 )
 
 type mockTimer struct {

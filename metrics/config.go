@@ -26,9 +26,9 @@ import (
 	"strings"
 	"time"
 
+	"github.com/Yangfisher1/knative-common-pkg/metrics/metricskey"
 	"go.opencensus.io/stats"
 	corev1 "k8s.io/api/core/v1"
-	"knative.dev/pkg/metrics/metricskey"
 )
 
 // metricsBackend specifies the backend to use for metrics
@@ -235,7 +235,7 @@ If this is a Go unit test consuming metric.Domain() then it should add the
 following import:
 
 import (
-	_ "knative.dev/pkg/metrics/testing"
+	_ "github.com/Yangfisher1/knative-common-pkg/metrics/testing"
 )`, DomainEnv, DomainEnv))
 }
 

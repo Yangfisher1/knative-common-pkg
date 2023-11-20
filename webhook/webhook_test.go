@@ -26,9 +26,9 @@ import (
 	"golang.org/x/sync/errgroup"
 
 	// Make system.Namespace() work in tests.
-	_ "knative.dev/pkg/system/testing"
+	_ "github.com/Yangfisher1/knative-common-pkg/system/testing"
 
-	. "knative.dev/pkg/reconciler/testing"
+	. "github.com/Yangfisher1/knative-common-pkg/reconciler/testing"
 )
 
 func newDefaultOptions() Options {

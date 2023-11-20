@@ -20,8 +20,8 @@ import (
 	"context"
 	"testing"
 
+	"github.com/Yangfisher1/knative-common-pkg/apis"
 	corev1 "k8s.io/api/core/v1"
-	"knative.dev/pkg/apis"
 )
 
 func TestPodSpecValidation(t *testing.T) {

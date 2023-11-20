@@ -29,10 +29,10 @@ import (
 	"k8s.io/apimachinery/pkg/runtime"
 
 	// Injection stuff
-	_ "knative.dev/pkg/client/injection/kube/client/fake"
-	_ "knative.dev/pkg/client/injection/kube/informers/admissionregistration/v1/mutatingwebhookconfiguration/fake"
-	_ "knative.dev/pkg/injection/clients/namespacedkube/informers/core/v1/secret/fake"
-	"knative.dev/pkg/ptr"
+	_ "github.com/Yangfisher1/knative-common-pkg/client/injection/kube/client/fake"
+	_ "github.com/Yangfisher1/knative-common-pkg/client/injection/kube/informers/admissionregistration/v1/mutatingwebhookconfiguration/fake"
+	_ "github.com/Yangfisher1/knative-common-pkg/injection/clients/namespacedkube/informers/core/v1/secret/fake"
+	"github.com/Yangfisher1/knative-common-pkg/ptr"
 
 	"gomodules.xyz/jsonpatch/v2"
 	admissionv1 "k8s.io/api/admission/v1"
@@ -42,17 +42,17 @@ import (
 	"k8s.io/apimachinery/pkg/runtime/schema"
 	fakekubeclientset "k8s.io/client-go/kubernetes/fake"
 
-	"knative.dev/pkg/apis"
-	"knative.dev/pkg/system"
-	"knative.dev/pkg/webhook"
+	"github.com/Yangfisher1/knative-common-pkg/apis"
+	"github.com/Yangfisher1/knative-common-pkg/system"
+	"github.com/Yangfisher1/knative-common-pkg/webhook"
 
-	_ "knative.dev/pkg/system/testing"
+	_ "github.com/Yangfisher1/knative-common-pkg/system/testing"
 
-	. "knative.dev/pkg/logging/testing"
-	. "knative.dev/pkg/reconciler/testing"
-	. "knative.dev/pkg/testing"
-	"knative.dev/pkg/webhook/resourcesemantics"
-	. "knative.dev/pkg/webhook/testing"
+	. "github.com/Yangfisher1/knative-common-pkg/logging/testing"
+	. "github.com/Yangfisher1/knative-common-pkg/reconciler/testing"
+	. "github.com/Yangfisher1/knative-common-pkg/testing"
+	"github.com/Yangfisher1/knative-common-pkg/webhook/resourcesemantics"
+	. "github.com/Yangfisher1/knative-common-pkg/webhook/testing"
 )
 
 const (

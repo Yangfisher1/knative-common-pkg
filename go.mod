@@ -1,4 +1,4 @@
-module knative.dev/pkg
+module github.com/Yangfisher1/knative-common-pkg
 
 go 1.18
 

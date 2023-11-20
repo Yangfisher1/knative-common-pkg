@@ -24,7 +24,7 @@ import (
 	"github.com/google/go-cmp/cmp"
 	"k8s.io/apimachinery/pkg/types"
 
-	"knative.dev/pkg/controller"
+	"github.com/Yangfisher1/knative-common-pkg/controller"
 )
 
 var _ controller.StatsReporter = (*FakeStatsReporter)(nil)

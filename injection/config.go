@@ -20,9 +20,9 @@ import (
 	"flag"
 	"log"
 
+	"github.com/Yangfisher1/knative-common-pkg/environment"
 	"k8s.io/client-go/rest"
 	"k8s.io/klog/v2"
-	"knative.dev/pkg/environment"
 )
 
 // ParseAndGetRESTConfigOrDie parses the rest config flags and creates a client or

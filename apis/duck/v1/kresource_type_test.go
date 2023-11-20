@@ -19,7 +19,7 @@ package v1
 import (
 	"testing"
 
-	"knative.dev/pkg/apis"
+	"github.com/Yangfisher1/knative-common-pkg/apis"
 )
 
 func TestGetConditionSet(t *testing.T) {

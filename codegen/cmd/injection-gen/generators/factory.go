@@ -69,12 +69,12 @@ func (g *factoryGenerator) GenerateType(c *generator.Context, t *types.Type, w i
 		"informersSharedInformerOption":                c.Universe.Function(types.Name{Package: g.sharedInformerFactoryPackage, Name: "SharedInformerOption"}),
 		"informersWithNamespace":                       c.Universe.Function(types.Name{Package: g.sharedInformerFactoryPackage, Name: "WithNamespace"}),
 		"informersSharedInformerFactory":               c.Universe.Function(types.Name{Package: g.sharedInformerFactoryPackage, Name: "SharedInformerFactory"}),
-		"injectionRegisterInformerFactory":             c.Universe.Type(types.Name{Package: "knative.dev/pkg/injection", Name: "Default.RegisterInformerFactory"}),
-		"injectionHasNamespace":                        c.Universe.Type(types.Name{Package: "knative.dev/pkg/injection", Name: "HasNamespaceScope"}),
-		"injectionGetNamespace":                        c.Universe.Type(types.Name{Package: "knative.dev/pkg/injection", Name: "GetNamespaceScope"}),
-		"controllerGetResyncPeriod":                    c.Universe.Type(types.Name{Package: "knative.dev/pkg/controller", Name: "GetResyncPeriod"}),
+		"injectionRegisterInformerFactory":             c.Universe.Type(types.Name{Package: "github.com/Yangfisher1/knative-common-pkg/injection", Name: "Default.RegisterInformerFactory"}),
+		"injectionHasNamespace":                        c.Universe.Type(types.Name{Package: "github.com/Yangfisher1/knative-common-pkg/injection", Name: "HasNamespaceScope"}),
+		"injectionGetNamespace":                        c.Universe.Type(types.Name{Package: "github.com/Yangfisher1/knative-common-pkg/injection", Name: "GetNamespaceScope"}),
+		"controllerGetResyncPeriod":                    c.Universe.Type(types.Name{Package: "github.com/Yangfisher1/knative-common-pkg/controller", Name: "GetResyncPeriod"}),
 		"loggingFromContext": c.Universe.Function(types.Name{
-			Package: "knative.dev/pkg/logging",
+			Package: "github.com/Yangfisher1/knative-common-pkg/logging",
 			Name:    "FromContext",
 		}),
 		"contextContext": c.Universe.Type(types.Name{

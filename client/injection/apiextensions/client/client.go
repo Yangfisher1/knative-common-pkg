@@ -24,6 +24,9 @@ import (
 	errors "errors"
 	fmt "fmt"
 
+	injection "github.com/Yangfisher1/knative-common-pkg/injection"
+	dynamicclient "github.com/Yangfisher1/knative-common-pkg/injection/clients/dynamicclient"
+	logging "github.com/Yangfisher1/knative-common-pkg/logging"
 	apiextensionsv1 "k8s.io/apiextensions-apiserver/pkg/apis/apiextensions/v1"
 	v1beta1 "k8s.io/apiextensions-apiserver/pkg/apis/apiextensions/v1beta1"
 	clientset "k8s.io/apiextensions-apiserver/pkg/client/clientset/clientset"
@@ -38,9 +41,6 @@ import (
 	discovery "k8s.io/client-go/discovery"
 	dynamic "k8s.io/client-go/dynamic"
 	rest "k8s.io/client-go/rest"
-	injection "knative.dev/pkg/injection"
-	dynamicclient "knative.dev/pkg/injection/clients/dynamicclient"
-	logging "knative.dev/pkg/logging"
 )
 
 func init() {

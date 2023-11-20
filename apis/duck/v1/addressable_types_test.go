@@ -20,8 +20,8 @@ import (
 	"context"
 	"testing"
 
+	"github.com/Yangfisher1/knative-common-pkg/apis"
 	"github.com/google/go-cmp/cmp"
-	"knative.dev/pkg/apis"
 )
 
 func TestConversion(t *testing.T) {

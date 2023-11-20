@@ -23,9 +23,9 @@ import (
 	"sync"
 	"time"
 
-	"knative.dev/pkg/test/helpers"
-	"knative.dev/pkg/test/mako/config"
-	"knative.dev/pkg/test/slackutil"
+	"github.com/Yangfisher1/knative-common-pkg/test/helpers"
+	"github.com/Yangfisher1/knative-common-pkg/test/mako/config"
+	"github.com/Yangfisher1/knative-common-pkg/test/slackutil"
 )
 
 var minInterval = flag.Duration("min-alert-interval", 24*time.Hour, "The minimum interval of sending Slack alerts.")

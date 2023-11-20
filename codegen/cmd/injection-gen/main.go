@@ -24,9 +24,9 @@ import (
 	"k8s.io/gengo/args"
 	"k8s.io/klog/v2"
 
+	generatorargs "github.com/Yangfisher1/knative-common-pkg/codegen/cmd/injection-gen/args"
+	"github.com/Yangfisher1/knative-common-pkg/codegen/cmd/injection-gen/generators"
 	"github.com/spf13/pflag"
-	generatorargs "knative.dev/pkg/codegen/cmd/injection-gen/args"
-	"knative.dev/pkg/codegen/cmd/injection-gen/generators"
 )
 
 func main() {

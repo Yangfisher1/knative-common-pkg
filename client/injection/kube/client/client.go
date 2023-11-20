@@ -24,6 +24,9 @@ import (
 	errors "errors"
 	fmt "fmt"
 
+	injection "github.com/Yangfisher1/knative-common-pkg/injection"
+	dynamicclient "github.com/Yangfisher1/knative-common-pkg/injection/clients/dynamicclient"
+	logging "github.com/Yangfisher1/knative-common-pkg/logging"
 	admissionregistrationv1 "k8s.io/api/admissionregistration/v1"
 	admissionregistrationv1beta1 "k8s.io/api/admissionregistration/v1beta1"
 	apiserverinternalv1alpha1 "k8s.io/api/apiserverinternal/v1alpha1"
@@ -165,9 +168,6 @@ import (
 	typedstoragev1alpha1 "k8s.io/client-go/kubernetes/typed/storage/v1alpha1"
 	typedstoragev1beta1 "k8s.io/client-go/kubernetes/typed/storage/v1beta1"
 	rest "k8s.io/client-go/rest"
-	injection "knative.dev/pkg/injection"
-	dynamicclient "knative.dev/pkg/injection/clients/dynamicclient"
-	logging "knative.dev/pkg/logging"
 )
 
 func init() {

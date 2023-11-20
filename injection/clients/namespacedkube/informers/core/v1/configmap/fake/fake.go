@@ -19,10 +19,10 @@ package fake
 import (
 	"context"
 
-	"knative.dev/pkg/controller"
-	"knative.dev/pkg/injection"
-	"knative.dev/pkg/injection/clients/namespacedkube/informers/core/v1/configmap"
-	"knative.dev/pkg/injection/clients/namespacedkube/informers/factory/fake"
+	"github.com/Yangfisher1/knative-common-pkg/controller"
+	"github.com/Yangfisher1/knative-common-pkg/injection"
+	"github.com/Yangfisher1/knative-common-pkg/injection/clients/namespacedkube/informers/core/v1/configmap"
+	"github.com/Yangfisher1/knative-common-pkg/injection/clients/namespacedkube/informers/factory/fake"
 )
 
 var Get = configmap.Get

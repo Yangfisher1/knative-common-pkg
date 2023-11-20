@@ -17,7 +17,7 @@ limitations under the License.
 package ducktypes
 
 import (
-	"knative.dev/pkg/apis"
+	"github.com/Yangfisher1/knative-common-pkg/apis"
 )
 
 // Implementable is implemented by the Fooable duck type that consumers

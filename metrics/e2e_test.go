@@ -41,9 +41,9 @@ import (
 	"google.golang.org/grpc"
 	proto "google.golang.org/protobuf/proto"
 
-	logtesting "knative.dev/pkg/logging/testing"
-	"knative.dev/pkg/metrics/metricskey"
-	"knative.dev/pkg/metrics/metricstest"
+	logtesting "github.com/Yangfisher1/knative-common-pkg/logging/testing"
+	"github.com/Yangfisher1/knative-common-pkg/metrics/metricskey"
+	"github.com/Yangfisher1/knative-common-pkg/metrics/metricstest"
 )
 
 var (

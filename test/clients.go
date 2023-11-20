@@ -23,13 +23,13 @@ import (
 	"fmt"
 	"strings"
 
+	"github.com/Yangfisher1/knative-common-pkg/test/logging"
+	"github.com/Yangfisher1/knative-common-pkg/test/spoof"
 	corev1 "k8s.io/api/core/v1"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/client-go/kubernetes"
 	"k8s.io/client-go/rest"
 	"k8s.io/client-go/tools/clientcmd"
-	"knative.dev/pkg/test/logging"
-	"knative.dev/pkg/test/spoof"
 )
 
 // NewSpoofingClient returns a spoofing client to make requests

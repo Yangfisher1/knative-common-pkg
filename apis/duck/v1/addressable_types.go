@@ -24,9 +24,9 @@ import (
 	"k8s.io/apimachinery/pkg/runtime"
 	"k8s.io/apimachinery/pkg/runtime/schema"
 
-	"knative.dev/pkg/apis"
-	"knative.dev/pkg/apis/duck/ducktypes"
-	"knative.dev/pkg/kmeta"
+	"github.com/Yangfisher1/knative-common-pkg/apis"
+	"github.com/Yangfisher1/knative-common-pkg/apis/duck/ducktypes"
+	"github.com/Yangfisher1/knative-common-pkg/kmeta"
 )
 
 // +genduck

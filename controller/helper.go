@@ -20,7 +20,7 @@ import (
 	"k8s.io/apimachinery/pkg/api/meta"
 	"k8s.io/apimachinery/pkg/runtime/schema"
 
-	"knative.dev/pkg/kmeta"
+	"github.com/Yangfisher1/knative-common-pkg/kmeta"
 )
 
 // Callback is a function that is passed to an informer's event handler.

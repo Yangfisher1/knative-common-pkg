@@ -27,14 +27,14 @@ import (
 	fakekubeclientset "k8s.io/client-go/kubernetes/fake"
 	admissionlisters "k8s.io/client-go/listers/admissionregistration/v1"
 
+	"github.com/Yangfisher1/knative-common-pkg/reconciler/testing"
+	pkgtesting "github.com/Yangfisher1/knative-common-pkg/testing"
+	pkgducktesting "github.com/Yangfisher1/knative-common-pkg/testing/duck"
 	fakeapix "k8s.io/apiextensions-apiserver/pkg/client/clientset/clientset/fake"
 	appsv1listers "k8s.io/client-go/listers/apps/v1"
 	autoscalingv2beta1listers "k8s.io/client-go/listers/autoscaling/v2beta1"
 	corev1listers "k8s.io/client-go/listers/core/v1"
 	"k8s.io/client-go/tools/cache"
-	"knative.dev/pkg/reconciler/testing"
-	pkgtesting "knative.dev/pkg/testing"
-	pkgducktesting "knative.dev/pkg/testing/duck"
 )
 
 var clientSetSchemes = []func(*runtime.Scheme) error{

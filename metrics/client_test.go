@@ -31,7 +31,7 @@ import (
 	"k8s.io/client-go/rest"
 	"k8s.io/client-go/tools/metrics"
 
-	"knative.dev/pkg/metrics/metricstest"
+	"github.com/Yangfisher1/knative-common-pkg/metrics/metricstest"
 )
 
 // clientFunc lets us implement rest.HTTPClient with a function matching

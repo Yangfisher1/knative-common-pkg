@@ -19,14 +19,14 @@ package validation
 import (
 	"testing"
 
+	"github.com/Yangfisher1/knative-common-pkg/apis"
+	"github.com/Yangfisher1/knative-common-pkg/ptr"
 	admissionv1 "k8s.io/api/admission/v1"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
-	"knative.dev/pkg/apis"
-	"knative.dev/pkg/ptr"
 
-	. "knative.dev/pkg/logging/testing"
-	. "knative.dev/pkg/testing"
-	. "knative.dev/pkg/webhook/testing"
+	. "github.com/Yangfisher1/knative-common-pkg/logging/testing"
+	. "github.com/Yangfisher1/knative-common-pkg/testing"
+	. "github.com/Yangfisher1/knative-common-pkg/webhook/testing"
 )
 
 // In strict mode, you are not allowed to set a deprecated field when doing a Create.

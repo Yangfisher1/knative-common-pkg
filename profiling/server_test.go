@@ -21,12 +21,12 @@ import (
 	"net/http/httptest"
 	"testing"
 
+	"github.com/Yangfisher1/knative-common-pkg/metrics"
+	"github.com/Yangfisher1/knative-common-pkg/system"
+	_ "github.com/Yangfisher1/knative-common-pkg/system/testing"
 	"go.uber.org/zap"
 	corev1 "k8s.io/api/core/v1"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
-	"knative.dev/pkg/metrics"
-	"knative.dev/pkg/system"
-	_ "knative.dev/pkg/system/testing"
 )
 
 func TestUpdateFromConfigMap(t *testing.T) {

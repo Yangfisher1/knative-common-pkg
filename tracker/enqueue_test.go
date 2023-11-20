@@ -26,8 +26,8 @@ import (
 	"k8s.io/apimachinery/pkg/types"
 	"k8s.io/client-go/tools/cache"
 
-	"knative.dev/pkg/kmeta"
-	. "knative.dev/pkg/testing"
+	"github.com/Yangfisher1/knative-common-pkg/kmeta"
+	. "github.com/Yangfisher1/knative-common-pkg/testing"
 )
 
 func TestHappyPathsExact(t *testing.T) {

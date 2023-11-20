@@ -34,8 +34,8 @@ import (
 
 	"google.golang.org/grpc"
 
-	"knative.dev/pkg/test/mako/config"
-	qspb "knative.dev/pkg/third_party/mako/proto/quickstore_go_proto"
+	"github.com/Yangfisher1/knative-common-pkg/test/mako/config"
+	qspb "github.com/Yangfisher1/knative-common-pkg/third_party/mako/proto/quickstore_go_proto"
 )
 
 const (

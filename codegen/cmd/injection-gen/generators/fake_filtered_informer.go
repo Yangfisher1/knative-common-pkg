@@ -87,13 +87,13 @@ func (g *fakeFilteredInformerGenerator) GenerateType(c *generator.Context, t *ty
 		"group":              namer.IC(g.groupGoName),
 		"type":               t,
 		"version":            namer.IC(g.groupVersion.Version.String()),
-		"controllerInformer": c.Universe.Type(types.Name{Package: "knative.dev/pkg/controller", Name: "Informer"}),
+		"controllerInformer": c.Universe.Type(types.Name{Package: "github.com/Yangfisher1/knative-common-pkg/controller", Name: "Informer"}),
 		"injectionRegisterFilteredInformers": c.Universe.Function(types.Name{
-			Package: "knative.dev/pkg/injection",
+			Package: "github.com/Yangfisher1/knative-common-pkg/injection",
 			Name:    "Fake.RegisterFilteredInformers",
 		}),
 		"loggingFromContext": c.Universe.Function(types.Name{
-			Package: "knative.dev/pkg/logging",
+			Package: "github.com/Yangfisher1/knative-common-pkg/logging",
 			Name:    "FromContext",
 		}),
 		"contextContext": c.Universe.Type(types.Name{

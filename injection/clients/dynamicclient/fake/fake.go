@@ -24,9 +24,9 @@ import (
 	k8sscheme "k8s.io/client-go/kubernetes/scheme"
 	"k8s.io/client-go/rest"
 
-	"knative.dev/pkg/injection"
-	"knative.dev/pkg/injection/clients/dynamicclient"
-	"knative.dev/pkg/logging"
+	"github.com/Yangfisher1/knative-common-pkg/injection"
+	"github.com/Yangfisher1/knative-common-pkg/injection/clients/dynamicclient"
+	"github.com/Yangfisher1/knative-common-pkg/logging"
 )
 
 func init() {

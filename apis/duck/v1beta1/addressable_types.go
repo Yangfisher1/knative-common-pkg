@@ -23,9 +23,9 @@ import (
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/apimachinery/pkg/runtime"
 
-	"knative.dev/pkg/apis"
-	"knative.dev/pkg/apis/duck/ducktypes"
-	v1 "knative.dev/pkg/apis/duck/v1"
+	"github.com/Yangfisher1/knative-common-pkg/apis"
+	"github.com/Yangfisher1/knative-common-pkg/apis/duck/ducktypes"
+	v1 "github.com/Yangfisher1/knative-common-pkg/apis/duck/v1"
 )
 
 // +genduck

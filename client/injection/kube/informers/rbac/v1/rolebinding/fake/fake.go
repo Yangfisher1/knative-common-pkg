@@ -21,10 +21,10 @@ package fake
 import (
 	context "context"
 
-	fake "knative.dev/pkg/client/injection/kube/informers/factory/fake"
-	rolebinding "knative.dev/pkg/client/injection/kube/informers/rbac/v1/rolebinding"
-	controller "knative.dev/pkg/controller"
-	injection "knative.dev/pkg/injection"
+	fake "github.com/Yangfisher1/knative-common-pkg/client/injection/kube/informers/factory/fake"
+	rolebinding "github.com/Yangfisher1/knative-common-pkg/client/injection/kube/informers/rbac/v1/rolebinding"
+	controller "github.com/Yangfisher1/knative-common-pkg/controller"
+	injection "github.com/Yangfisher1/knative-common-pkg/injection"
 )
 
 var Get = rolebinding.Get

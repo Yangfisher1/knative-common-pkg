@@ -21,10 +21,10 @@ package fake
 import (
 	context "context"
 
-	fake "knative.dev/pkg/client/injection/kube/informers/factory/fake"
-	prioritylevelconfiguration "knative.dev/pkg/client/injection/kube/informers/flowcontrol/v1beta2/prioritylevelconfiguration"
-	controller "knative.dev/pkg/controller"
-	injection "knative.dev/pkg/injection"
+	fake "github.com/Yangfisher1/knative-common-pkg/client/injection/kube/informers/factory/fake"
+	prioritylevelconfiguration "github.com/Yangfisher1/knative-common-pkg/client/injection/kube/informers/flowcontrol/v1beta2/prioritylevelconfiguration"
+	controller "github.com/Yangfisher1/knative-common-pkg/controller"
+	injection "github.com/Yangfisher1/knative-common-pkg/injection"
 )
 
 var Get = prioritylevelconfiguration.Get

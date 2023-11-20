@@ -21,12 +21,12 @@ package conditions
 import (
 	context "context"
 
-	duck "knative.dev/pkg/apis/duck"
-	v1beta1 "knative.dev/pkg/apis/duck/v1beta1"
-	controller "knative.dev/pkg/controller"
-	injection "knative.dev/pkg/injection"
-	dynamicclient "knative.dev/pkg/injection/clients/dynamicclient"
-	logging "knative.dev/pkg/logging"
+	duck "github.com/Yangfisher1/knative-common-pkg/apis/duck"
+	v1beta1 "github.com/Yangfisher1/knative-common-pkg/apis/duck/v1beta1"
+	controller "github.com/Yangfisher1/knative-common-pkg/controller"
+	injection "github.com/Yangfisher1/knative-common-pkg/injection"
+	dynamicclient "github.com/Yangfisher1/knative-common-pkg/injection/clients/dynamicclient"
+	logging "github.com/Yangfisher1/knative-common-pkg/logging"
 )
 
 func init() {
@@ -54,7 +54,7 @@ func Get(ctx context.Context) duck.InformerFactory {
 	untyped := ctx.Value(Key{})
 	if untyped == nil {
 		logging.FromContext(ctx).Panic(
-			"Unable to fetch knative.dev/pkg/apis/duck.InformerFactory from context.")
+			"Unable to fetch github.com/Yangfisher1/knative-common-pkg/apis/duck.InformerFactory from context.")
 	}
 	return untyped.(duck.InformerFactory)
 }

@@ -22,9 +22,9 @@ import (
 
 	"go.uber.org/zap"
 
+	"github.com/Yangfisher1/knative-common-pkg/configmap"
+	"github.com/Yangfisher1/knative-common-pkg/tracing/config"
 	corev1 "k8s.io/api/core/v1"
-	"knative.dev/pkg/configmap"
-	"knative.dev/pkg/tracing/config"
 )
 
 type Tracer interface {

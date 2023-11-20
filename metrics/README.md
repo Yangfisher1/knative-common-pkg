@@ -19,8 +19,8 @@ namespace.
 
 There are currently
 [6 supported Golang exporters for OpenCensus](https://opencensus.io/exporters/supported-exporters/go/).
-We do not want to build all of those backends into the core of `knative.dev/pkg` and all
-downstream dependents, and we'd like all the code shipped in `knative.dev/pkg`
+We do not want to build all of those backends into the core of `github.com/Yangfisher1/knative-common-pkg` and all
+downstream dependents, and we'd like all the code shipped in `github.com/Yangfisher1/knative-common-pkg`
 to be able to be tested without needing any special environment setup.
 
 With the current direct-integration setup, there needs to be initial and ongoing

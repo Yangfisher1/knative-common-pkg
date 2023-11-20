@@ -23,9 +23,9 @@ import (
 	"github.com/google/go-cmp/cmp"
 	"go.uber.org/zap/zapcore"
 
-	"knative.dev/pkg/injection"
-	"knative.dev/pkg/leaderelection"
-	"knative.dev/pkg/logging"
+	"github.com/Yangfisher1/knative-common-pkg/injection"
+	"github.com/Yangfisher1/knative-common-pkg/leaderelection"
+	"github.com/Yangfisher1/knative-common-pkg/logging"
 )
 
 func TestEnabledControllers(t *testing.T) {

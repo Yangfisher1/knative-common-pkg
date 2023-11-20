@@ -20,8 +20,8 @@ import (
 	"crypto/rand"
 	"testing"
 
+	"github.com/Yangfisher1/knative-common-pkg/tracing/config"
 	"go.opencensus.io/trace"
-	"knative.dev/pkg/tracing/config"
 )
 
 func TestCreateOCTConfig(t *testing.T) {

@@ -28,17 +28,17 @@ import (
 	"strings"
 	"time"
 
-	"knative.dev/pkg/injection"
+	"github.com/Yangfisher1/knative-common-pkg/injection"
 
+	kubeclient "github.com/Yangfisher1/knative-common-pkg/client/injection/kube/client"
+	"github.com/Yangfisher1/knative-common-pkg/kflag"
+	"github.com/Yangfisher1/knative-common-pkg/signals"
+	"github.com/Yangfisher1/knative-common-pkg/system"
 	"golang.org/x/sync/errgroup"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/apimachinery/pkg/util/sets"
 	"k8s.io/apimachinery/pkg/util/wait"
 	"k8s.io/client-go/kubernetes"
-	kubeclient "knative.dev/pkg/client/injection/kube/client"
-	"knative.dev/pkg/kflag"
-	"knative.dev/pkg/signals"
-	"knative.dev/pkg/system"
 )
 
 // components is a mapping from component name to the collection of leader pod names.

@@ -24,6 +24,7 @@ import (
 	"regexp"
 	"testing"
 
+	"github.com/Yangfisher1/knative-common-pkg/apis"
 	"github.com/google/go-cmp/cmp"
 	"github.com/google/go-cmp/cmp/cmpopts"
 	fuzz "github.com/google/gofuzz"
@@ -37,7 +38,6 @@ import (
 	"k8s.io/apimachinery/pkg/runtime/schema"
 	"k8s.io/apimachinery/pkg/runtime/serializer"
 	"k8s.io/apimachinery/pkg/util/sets"
-	"knative.dev/pkg/apis"
 )
 
 type convertibleObject interface {
@@ -87,8 +87,7 @@ func init() {
 // ExternalTypesViaJSON applies the round-trip test to all external round-trippable Kinds
 // in the scheme. This is effectively testing the scenario:
 //
-//    external -> json -> external
-//
+//	external -> json -> external
 func ExternalTypesViaJSON(t *testing.T, scheme *runtime.Scheme, fuzzerFuncs fuzzer.FuzzerFuncs) {
 	codecFactory := serializer.NewCodecFactory(scheme)
 
@@ -114,8 +113,7 @@ func ExternalTypesViaJSON(t *testing.T, scheme *runtime.Scheme, fuzzerFuncs fuzz
 // ExternalTypesViaHub applies the round-trip test to all external round-trippable Kinds
 // in the scheme. This is effectively testing the scenario:
 //
-//    external version -> hub version -> external version
-//
+//	external version -> hub version -> external version
 func ExternalTypesViaHub(t *testing.T, scheme, hubs *runtime.Scheme, fuzzerFuncs fuzzer.FuzzerFuncs) {
 	f := fuzzer.FuzzerFor(
 		fuzzer.MergeFuzzerFuncs(metafuzzer.Funcs, fuzzerFuncs),
@@ -196,7 +194,7 @@ func roundTripViaHub(t *testing.T, gvk schema.GroupVersionKind, scheme, hubs *ru
 }
 
 func diff(obj1, obj2 interface{}) string {
-	// knative.dev/pkg/apis.URL is an alias to net.URL which embeds a
+	// github.com/Yangfisher1/knative-common-pkg/apis.URL is an alias to net.URL which embeds a
 	// url.Userinfo that has an unexported field
 	return cmp.Diff(obj1, obj2, cmpopts.IgnoreUnexported(url.Userinfo{}))
 }

@@ -19,10 +19,10 @@ package testing
 import (
 	"sync"
 
+	"github.com/Yangfisher1/knative-common-pkg/kmeta"
+	"github.com/Yangfisher1/knative-common-pkg/tracker"
 	corev1 "k8s.io/api/core/v1"
 	"k8s.io/apimachinery/pkg/types"
-	"knative.dev/pkg/kmeta"
-	"knative.dev/pkg/tracker"
 )
 
 // NullTracker implements Tracker

@@ -21,10 +21,10 @@ package fake
 import (
 	context "context"
 
-	fake "knative.dev/pkg/client/injection/kube/informers/factory/fake"
-	clusterrole "knative.dev/pkg/client/injection/kube/informers/rbac/v1/clusterrole"
-	controller "knative.dev/pkg/controller"
-	injection "knative.dev/pkg/injection"
+	fake "github.com/Yangfisher1/knative-common-pkg/client/injection/kube/informers/factory/fake"
+	clusterrole "github.com/Yangfisher1/knative-common-pkg/client/injection/kube/informers/rbac/v1/clusterrole"
+	controller "github.com/Yangfisher1/knative-common-pkg/controller"
+	injection "github.com/Yangfisher1/knative-common-pkg/injection"
 )
 
 var Get = clusterrole.Get

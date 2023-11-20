@@ -33,9 +33,9 @@ import (
 	clientgotesting "k8s.io/client-go/testing"
 	"k8s.io/client-go/tools/record"
 
-	"knative.dev/pkg/controller"
-	"knative.dev/pkg/injection"
-	logtesting "knative.dev/pkg/logging/testing"
+	"github.com/Yangfisher1/knative-common-pkg/controller"
+	"github.com/Yangfisher1/knative-common-pkg/injection"
+	logtesting "github.com/Yangfisher1/knative-common-pkg/logging/testing"
 )
 
 // SetupFakeContext sets up the the Context and the fake informers for the tests.

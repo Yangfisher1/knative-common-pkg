@@ -25,13 +25,13 @@ import (
 	"net/http"
 	"testing"
 
+	kubeclient "github.com/Yangfisher1/knative-common-pkg/client/injection/kube/client/fake"
 	"github.com/google/go-cmp/cmp"
 	"golang.org/x/sync/errgroup"
 	apixv1 "k8s.io/apiextensions-apiserver/pkg/apis/apiextensions/v1"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/apimachinery/pkg/runtime"
 	"k8s.io/apimachinery/pkg/types"
-	kubeclient "knative.dev/pkg/client/injection/kube/client/fake"
 )
 
 type fixedConversionController struct {

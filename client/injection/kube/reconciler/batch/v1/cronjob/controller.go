@@ -24,6 +24,12 @@ import (
 	reflect "reflect"
 	strings "strings"
 
+	client "github.com/Yangfisher1/knative-common-pkg/client/injection/kube/client"
+	cronjob "github.com/Yangfisher1/knative-common-pkg/client/injection/kube/informers/batch/v1/cronjob"
+	controller "github.com/Yangfisher1/knative-common-pkg/controller"
+	logging "github.com/Yangfisher1/knative-common-pkg/logging"
+	logkey "github.com/Yangfisher1/knative-common-pkg/logging/logkey"
+	reconciler "github.com/Yangfisher1/knative-common-pkg/reconciler"
 	zap "go.uber.org/zap"
 	corev1 "k8s.io/api/core/v1"
 	labels "k8s.io/apimachinery/pkg/labels"
@@ -32,12 +38,6 @@ import (
 	scheme "k8s.io/client-go/kubernetes/scheme"
 	v1 "k8s.io/client-go/kubernetes/typed/core/v1"
 	record "k8s.io/client-go/tools/record"
-	client "knative.dev/pkg/client/injection/kube/client"
-	cronjob "knative.dev/pkg/client/injection/kube/informers/batch/v1/cronjob"
-	controller "knative.dev/pkg/controller"
-	logging "knative.dev/pkg/logging"
-	logkey "knative.dev/pkg/logging/logkey"
-	reconciler "knative.dev/pkg/reconciler"
 )
 
 const (

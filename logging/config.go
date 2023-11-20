@@ -29,8 +29,8 @@ import (
 	"go.uber.org/zap/zapcore"
 	corev1 "k8s.io/api/core/v1"
 
-	"knative.dev/pkg/changeset"
-	"knative.dev/pkg/logging/logkey"
+	"github.com/Yangfisher1/knative-common-pkg/changeset"
+	"github.com/Yangfisher1/knative-common-pkg/logging/logkey"
 )
 
 const (

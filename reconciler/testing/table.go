@@ -33,11 +33,11 @@ import (
 	clientgotesting "k8s.io/client-go/testing"
 	"k8s.io/client-go/tools/cache"
 
-	"knative.dev/pkg/controller"
-	"knative.dev/pkg/kmeta"
-	"knative.dev/pkg/logging"
-	"knative.dev/pkg/logging/logkey"
-	_ "knative.dev/pkg/system/testing" // Setup system.Namespace()
+	"github.com/Yangfisher1/knative-common-pkg/controller"
+	"github.com/Yangfisher1/knative-common-pkg/kmeta"
+	"github.com/Yangfisher1/knative-common-pkg/logging"
+	"github.com/Yangfisher1/knative-common-pkg/logging/logkey"
+	_ "github.com/Yangfisher1/knative-common-pkg/system/testing" // Setup system.Namespace()
 )
 
 // TableRow holds a single row of our table test.

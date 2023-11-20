@@ -19,8 +19,8 @@ package testing
 import (
 	"context"
 
+	"github.com/Yangfisher1/knative-common-pkg/apis"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
-	"knative.dev/pkg/apis"
 )
 
 // +k8s:deepcopy-gen:interfaces=k8s.io/apimachinery/pkg/runtime.Object

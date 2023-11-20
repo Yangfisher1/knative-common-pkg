@@ -26,12 +26,12 @@ import (
 	"sync"
 	"time"
 
+	"github.com/Yangfisher1/knative-common-pkg/ptr"
 	corev1 "k8s.io/api/core/v1"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/apimachinery/pkg/util/sets"
 	"k8s.io/apimachinery/pkg/watch"
 	"k8s.io/client-go/kubernetes"
-	"knative.dev/pkg/ptr"
 )
 
 func FromNamespaces(ctx context.Context, c kubernetes.Interface, namespaces []string) Source {

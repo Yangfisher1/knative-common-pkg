@@ -26,15 +26,15 @@ import (
 	"testing"
 	"time"
 
+	"github.com/Yangfisher1/knative-common-pkg/system"
+	certresources "github.com/Yangfisher1/knative-common-pkg/webhook/certificates/resources"
 	"github.com/google/go-cmp/cmp"
 	corev1 "k8s.io/api/core/v1"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/apimachinery/pkg/util/wait"
 	"k8s.io/client-go/kubernetes"
-	"knative.dev/pkg/system"
-	certresources "knative.dev/pkg/webhook/certificates/resources"
 
-	. "knative.dev/pkg/logging/testing"
+	. "github.com/Yangfisher1/knative-common-pkg/logging/testing"
 )
 
 func TestEnsureLabelSelectorExpressions(t *testing.T) {

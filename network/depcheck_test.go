@@ -19,12 +19,12 @@ package network_test
 import (
 	"testing"
 
-	"knative.dev/pkg/depcheck"
+	"github.com/Yangfisher1/knative-common-pkg/depcheck"
 )
 
 func TestNoDeps(t *testing.T) {
 	depcheck.AssertNoDependency(t, map[string][]string{
-		"knative.dev/pkg/network":          depcheck.KnownHeavyDependencies,
-		"knative.dev/pkg/network/handlers": depcheck.KnownHeavyDependencies,
+		"github.com/Yangfisher1/knative-common-pkg/network":          depcheck.KnownHeavyDependencies,
+		"github.com/Yangfisher1/knative-common-pkg/network/handlers": depcheck.KnownHeavyDependencies,
 	})
 }

@@ -17,7 +17,7 @@ limitations under the License.
 package duck
 
 import (
-	"knative.dev/pkg/apis/duck/ducktypes"
+	"github.com/Yangfisher1/knative-common-pkg/apis/duck/ducktypes"
 )
 
 const (

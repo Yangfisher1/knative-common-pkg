@@ -19,9 +19,9 @@ package v1
 import (
 	"context"
 
-	"knative.dev/pkg/apis"
-	"knative.dev/pkg/apis/duck/ducktypes"
-	"knative.dev/pkg/kmap"
+	"github.com/Yangfisher1/knative-common-pkg/apis"
+	"github.com/Yangfisher1/knative-common-pkg/apis/duck/ducktypes"
+	"github.com/Yangfisher1/knative-common-pkg/kmap"
 )
 
 // +genduck

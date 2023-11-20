@@ -30,7 +30,7 @@ import (
 	"go.opencensus.io/trace"
 	"go.uber.org/zap"
 
-	"knative.dev/pkg/tracing/config"
+	"github.com/Yangfisher1/knative-common-pkg/tracing/config"
 )
 
 // ConfigOption is the interface for adding additional exporters and configuring opencensus tracing.
@@ -147,8 +147,9 @@ func WithExporter(name string, logger *zap.SugaredLogger) ConfigOption {
 // The host arg is used for a value of tag ip="{IP}" so you can use an actual IP. Otherwise,
 // the host name must be able to be resolved.
 // e.g)
-//   "name" is a service name like activator-service.
-//   "host" is a endpoint IP like activator-service's endpoint IP.
+//
+//	"name" is a service name like activator-service.
+//	"host" is a endpoint IP like activator-service's endpoint IP.
 func WithExporterFull(name, host string, logger *zap.SugaredLogger) ConfigOption {
 	return func(cfg *config.Config) error {
 		var (

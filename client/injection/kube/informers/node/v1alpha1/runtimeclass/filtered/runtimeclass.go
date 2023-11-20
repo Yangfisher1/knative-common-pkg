@@ -21,6 +21,11 @@ package filtered
 import (
 	context "context"
 
+	client "github.com/Yangfisher1/knative-common-pkg/client/injection/kube/client"
+	filtered "github.com/Yangfisher1/knative-common-pkg/client/injection/kube/informers/factory/filtered"
+	controller "github.com/Yangfisher1/knative-common-pkg/controller"
+	injection "github.com/Yangfisher1/knative-common-pkg/injection"
+	logging "github.com/Yangfisher1/knative-common-pkg/logging"
 	apinodev1alpha1 "k8s.io/api/node/v1alpha1"
 	v1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	labels "k8s.io/apimachinery/pkg/labels"
@@ -28,11 +33,6 @@ import (
 	kubernetes "k8s.io/client-go/kubernetes"
 	nodev1alpha1 "k8s.io/client-go/listers/node/v1alpha1"
 	cache "k8s.io/client-go/tools/cache"
-	client "knative.dev/pkg/client/injection/kube/client"
-	filtered "knative.dev/pkg/client/injection/kube/informers/factory/filtered"
-	controller "knative.dev/pkg/controller"
-	injection "knative.dev/pkg/injection"
-	logging "knative.dev/pkg/logging"
 )
 
 func init() {

@@ -19,8 +19,8 @@ limitations under the License.
 package fake
 
 import (
-	binding "knative.dev/pkg/client/injection/ducks/duck/v1beta1/binding"
-	injection "knative.dev/pkg/injection"
+	binding "github.com/Yangfisher1/knative-common-pkg/client/injection/ducks/duck/v1beta1/binding"
+	injection "github.com/Yangfisher1/knative-common-pkg/injection"
 )
 
 var Get = binding.Get

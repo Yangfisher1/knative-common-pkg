@@ -25,14 +25,14 @@ import (
 	"testing"
 	"time"
 
-	kubeclient "knative.dev/pkg/client/injection/kube/client/fake"
-	_ "knative.dev/pkg/injection/clients/namespacedkube/informers/core/v1/secret/fake"
-	"knative.dev/pkg/system"
+	kubeclient "github.com/Yangfisher1/knative-common-pkg/client/injection/kube/client/fake"
+	_ "github.com/Yangfisher1/knative-common-pkg/injection/clients/namespacedkube/informers/core/v1/secret/fake"
+	"github.com/Yangfisher1/knative-common-pkg/system"
 
+	"github.com/Yangfisher1/knative-common-pkg/metrics/metricstest"
+	pkgtest "github.com/Yangfisher1/knative-common-pkg/testing"
 	"golang.org/x/sync/errgroup"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
-	"knative.dev/pkg/metrics/metricstest"
-	pkgtest "knative.dev/pkg/testing"
 )
 
 // createResource creates a testing.Resource with the given name in the system namespace.

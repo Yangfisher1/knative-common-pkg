@@ -27,7 +27,7 @@ import (
 	"go.opencensus.io/trace"
 	"go.opencensus.io/trace/propagation"
 
-	_ "knative.dev/pkg/metrics/testing"
+	_ "github.com/Yangfisher1/knative-common-pkg/metrics/testing"
 )
 
 var (

@@ -16,7 +16,7 @@ limitations under the License.
 
 package upgrade_test
 
-import "knative.dev/pkg/test/upgrade"
+import "github.com/Yangfisher1/knative-common-pkg/test/upgrade"
 
 type failurePoint struct {
 	step    int

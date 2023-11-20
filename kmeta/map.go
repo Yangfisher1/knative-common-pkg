@@ -16,7 +16,7 @@ limitations under the License.
 
 package kmeta
 
-import "knative.dev/pkg/kmap"
+import "github.com/Yangfisher1/knative-common-pkg/kmap"
 
 // CopyMap makes a copy of the map.
 // Deprecated: use kmap.Copy

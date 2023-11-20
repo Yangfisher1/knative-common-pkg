@@ -20,8 +20,8 @@ import (
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/apimachinery/pkg/runtime"
 
-	"knative.dev/pkg/apis"
-	"knative.dev/pkg/apis/duck"
+	"github.com/Yangfisher1/knative-common-pkg/apis"
+	"github.com/Yangfisher1/knative-common-pkg/apis/duck"
 )
 
 // +genduck
@@ -33,7 +33,7 @@ import (
 // under Status rather than strings.
 // This is to support existing resources until they migrate.
 //
-// Do not use this for anything new, use Addressable
+// # Do not use this for anything new, use Addressable
 //
 // LegacyTargetable is the old schema for the addressable portion
 // of the payload

@@ -24,9 +24,9 @@ import (
 	"strings"
 	"time"
 
+	"github.com/Yangfisher1/knative-common-pkg/ptr"
+	"github.com/Yangfisher1/knative-common-pkg/test/ghutil"
 	"github.com/google/go-github/v27/github"
-	"knative.dev/pkg/ptr"
-	"knative.dev/pkg/test/ghutil"
 )
 
 // FakeGithubClient is a faked client, implements all functions of ghutil.GithubOperations

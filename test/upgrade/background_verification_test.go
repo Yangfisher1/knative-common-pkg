@@ -21,7 +21,7 @@ import (
 	"strings"
 	"testing"
 
-	"knative.dev/pkg/test/upgrade"
+	"github.com/Yangfisher1/knative-common-pkg/test/upgrade"
 )
 
 const (

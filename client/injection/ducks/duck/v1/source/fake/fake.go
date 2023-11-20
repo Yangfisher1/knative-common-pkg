@@ -19,8 +19,8 @@ limitations under the License.
 package fake
 
 import (
-	source "knative.dev/pkg/client/injection/ducks/duck/v1/source"
-	injection "knative.dev/pkg/injection"
+	source "github.com/Yangfisher1/knative-common-pkg/client/injection/ducks/duck/v1/source"
+	injection "github.com/Yangfisher1/knative-common-pkg/injection"
 )
 
 var Get = source.Get

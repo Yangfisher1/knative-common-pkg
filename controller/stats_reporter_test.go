@@ -22,10 +22,10 @@ import (
 	"testing"
 	"time"
 
+	"github.com/Yangfisher1/knative-common-pkg/metrics/metricstest"
+	_ "github.com/Yangfisher1/knative-common-pkg/metrics/testing"
 	"go.opencensus.io/stats/view"
 	"k8s.io/apimachinery/pkg/types"
-	"knative.dev/pkg/metrics/metricstest"
-	_ "knative.dev/pkg/metrics/testing"
 )
 
 func TestNewStatsReporterErrors(t *testing.T) {

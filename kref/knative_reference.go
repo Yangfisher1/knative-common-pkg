@@ -19,11 +19,11 @@ package kref
 import (
 	"fmt"
 
+	duckv1 "github.com/Yangfisher1/knative-common-pkg/apis/duck/v1"
 	apiextensionsv1 "k8s.io/apiextensions-apiserver/pkg/apis/apiextensions/v1"
 	apiextensionsv1lister "k8s.io/apiextensions-apiserver/pkg/client/listers/apiextensions/v1"
 	"k8s.io/apimachinery/pkg/api/meta"
 	"k8s.io/apimachinery/pkg/runtime/schema"
-	duckv1 "knative.dev/pkg/apis/duck/v1"
 )
 
 // KReferenceResolver is an object that resolves the KReference.Group field

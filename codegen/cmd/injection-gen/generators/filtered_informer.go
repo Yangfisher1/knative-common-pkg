@@ -97,14 +97,14 @@ func (g *filteredInjectionGenerator) GenerateType(c *generator.Context, t *types
 		"group":                              namer.IC(g.groupGoName),
 		"type":                               t,
 		"version":                            namer.IC(g.groupVersion.Version.String()),
-		"injectionRegisterFilteredInformers": c.Universe.Type(types.Name{Package: "knative.dev/pkg/injection", Name: "Default.RegisterFilteredInformers"}),
-		"injectionRegisterDynamicInformer":   c.Universe.Type(types.Name{Package: "knative.dev/pkg/injection", Name: "Dynamic.RegisterDynamicInformer"}),
-		"controllerInformer":                 c.Universe.Type(types.Name{Package: "knative.dev/pkg/controller", Name: "Informer"}),
+		"injectionRegisterFilteredInformers": c.Universe.Type(types.Name{Package: "github.com/Yangfisher1/knative-common-pkg/injection", Name: "Default.RegisterFilteredInformers"}),
+		"injectionRegisterDynamicInformer":   c.Universe.Type(types.Name{Package: "github.com/Yangfisher1/knative-common-pkg/injection", Name: "Dynamic.RegisterDynamicInformer"}),
+		"controllerInformer":                 c.Universe.Type(types.Name{Package: "github.com/Yangfisher1/knative-common-pkg/controller", Name: "Informer"}),
 		"informersTypedInformer":             c.Universe.Type(types.Name{Package: g.typedInformerPackage, Name: t.Name.Name + "Informer"}),
 		"factoryLabelKey":                    c.Universe.Type(types.Name{Package: g.groupInformerFactoryPackage, Name: "LabelKey"}),
 		"factoryGet":                         c.Universe.Function(types.Name{Package: g.groupInformerFactoryPackage, Name: "Get"}),
 		"loggingFromContext": c.Universe.Function(types.Name{
-			Package: "knative.dev/pkg/logging",
+			Package: "github.com/Yangfisher1/knative-common-pkg/logging",
 			Name:    "FromContext",
 		}),
 		"contextContext": c.Universe.Type(types.Name{

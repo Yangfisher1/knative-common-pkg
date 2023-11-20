@@ -25,17 +25,17 @@ import (
 	"strings"
 
 	"cloud.google.com/go/compute/metadata"
-	kubeclient "knative.dev/pkg/client/injection/kube/client"
+	kubeclient "github.com/Yangfisher1/knative-common-pkg/client/injection/kube/client"
 
+	"github.com/Yangfisher1/knative-common-pkg/changeset"
+	"github.com/Yangfisher1/knative-common-pkg/controller"
+	"github.com/Yangfisher1/knative-common-pkg/injection"
+	"github.com/Yangfisher1/knative-common-pkg/test/mako/alerter"
+	"github.com/Yangfisher1/knative-common-pkg/test/mako/config"
 	"github.com/google/mako/go/quickstore"
 	qpb "github.com/google/mako/proto/quickstore/quickstore_go_proto"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/client-go/rest"
-	"knative.dev/pkg/changeset"
-	"knative.dev/pkg/controller"
-	"knative.dev/pkg/injection"
-	"knative.dev/pkg/test/mako/alerter"
-	"knative.dev/pkg/test/mako/config"
 )
 
 const (

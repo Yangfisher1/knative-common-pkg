@@ -21,10 +21,10 @@ package fake
 import (
 	context "context"
 
-	event "knative.dev/pkg/client/injection/kube/informers/events/v1/event"
-	fake "knative.dev/pkg/client/injection/kube/informers/factory/fake"
-	controller "knative.dev/pkg/controller"
-	injection "knative.dev/pkg/injection"
+	event "github.com/Yangfisher1/knative-common-pkg/client/injection/kube/informers/events/v1/event"
+	fake "github.com/Yangfisher1/knative-common-pkg/client/injection/kube/informers/factory/fake"
+	controller "github.com/Yangfisher1/knative-common-pkg/controller"
+	injection "github.com/Yangfisher1/knative-common-pkg/injection"
 )
 
 var Get = event.Get

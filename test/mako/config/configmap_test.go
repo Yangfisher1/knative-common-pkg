@@ -19,7 +19,7 @@ package config
 import (
 	"testing"
 
-	. "knative.dev/pkg/configmap/testing"
+	. "github.com/Yangfisher1/knative-common-pkg/configmap/testing"
 )
 
 func TestOurConfig(t *testing.T) {

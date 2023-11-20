@@ -21,7 +21,7 @@ import (
 	"fmt"
 	"strings"
 
-	"knative.dev/pkg/apis"
+	"github.com/Yangfisher1/knative-common-pkg/apis"
 )
 
 // KReference contains enough information to refer to another object.

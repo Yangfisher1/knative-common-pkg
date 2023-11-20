@@ -21,9 +21,9 @@ import (
 	"errors"
 	"testing"
 
-	. "knative.dev/pkg/tracing"
-	"knative.dev/pkg/tracing/config"
-	. "knative.dev/pkg/tracing/testing"
+	. "github.com/Yangfisher1/knative-common-pkg/tracing"
+	"github.com/Yangfisher1/knative-common-pkg/tracing/config"
+	. "github.com/Yangfisher1/knative-common-pkg/tracing/testing"
 )
 
 func TestOpenCensusTracerGlobalLifecycle(t *testing.T) {

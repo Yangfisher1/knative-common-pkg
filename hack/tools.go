@@ -28,6 +28,6 @@ import (
 	_ "k8s.io/code-generator/cmd/informer-gen"
 	_ "k8s.io/code-generator/cmd/lister-gen"
 
+	_ "github.com/Yangfisher1/knative-common-pkg/codegen/cmd/injection-gen"
 	_ "knative.dev/hack"
-	_ "knative.dev/pkg/codegen/cmd/injection-gen"
 )

@@ -32,9 +32,9 @@ import (
 	"k8s.io/client-go/dynamic"
 	"k8s.io/client-go/dynamic/fake"
 
-	"knative.dev/pkg/apis/duck"
-	duckv1alpha1 "knative.dev/pkg/apis/duck/v1alpha1"
-	. "knative.dev/pkg/testing"
+	"github.com/Yangfisher1/knative-common-pkg/apis/duck"
+	duckv1alpha1 "github.com/Yangfisher1/knative-common-pkg/apis/duck/v1alpha1"
+	. "github.com/Yangfisher1/knative-common-pkg/testing"
 )
 
 func TestSimpleList(t *testing.T) {

@@ -29,8 +29,8 @@ import (
 	fakekube "k8s.io/client-go/kubernetes/fake"
 	ktesting "k8s.io/client-go/testing"
 
-	"knative.dev/pkg/reconciler"
-	_ "knative.dev/pkg/system/testing"
+	"github.com/Yangfisher1/knative-common-pkg/reconciler"
+	_ "github.com/Yangfisher1/knative-common-pkg/system/testing"
 )
 
 func TestWithBuilder(t *testing.T) {

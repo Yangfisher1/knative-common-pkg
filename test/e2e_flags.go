@@ -24,9 +24,9 @@ import (
 	"flag"
 	"text/template"
 
-	env "knative.dev/pkg/environment"
-	testenv "knative.dev/pkg/test/environment"
-	"knative.dev/pkg/test/logging"
+	env "github.com/Yangfisher1/knative-common-pkg/environment"
+	testenv "github.com/Yangfisher1/knative-common-pkg/test/environment"
+	"github.com/Yangfisher1/knative-common-pkg/test/logging"
 )
 
 var (

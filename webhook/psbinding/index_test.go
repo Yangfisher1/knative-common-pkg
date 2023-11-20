@@ -23,7 +23,7 @@ import (
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/apimachinery/pkg/labels"
 
-	. "knative.dev/pkg/testing/duck"
+	. "github.com/Yangfisher1/knative-common-pkg/testing/duck"
 )
 
 func TestExact(t *testing.T) {
