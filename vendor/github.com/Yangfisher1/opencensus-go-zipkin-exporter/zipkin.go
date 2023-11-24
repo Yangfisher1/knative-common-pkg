@@ -20,9 +20,9 @@ import (
 	"fmt"
 	"strconv"
 
+	"github.com/Yangfisher1/opencensus-go/trace"
 	"github.com/openzipkin/zipkin-go/model"
 	"github.com/openzipkin/zipkin-go/reporter"
-	"go.opencensus.io/trace"
 )
 
 // Exporter is an implementation of trace.Exporter that uploads spans to a
@@ -41,7 +41,9 @@ type Exporter struct {
 //
 // localEndpoint sets the local endpoint of exported spans.  It can be
 // constructed with github.com/openzipkin/zipkin-go.NewEndpoint, e.g.:
-// 	localEndpoint, err := NewEndpoint("my server", listener.Addr().String())
+//
+//	localEndpoint, err := NewEndpoint("my server", listener.Addr().String())
+//
 // localEndpoint can be nil.
 func NewExporter(reporter reporter.Reporter, localEndpoint *model.Endpoint) *Exporter {
 	return &Exporter{

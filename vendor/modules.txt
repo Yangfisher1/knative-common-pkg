@@ -17,16 +17,13 @@ contrib.go.opencensus.io/exporter/ocagent
 # contrib.go.opencensus.io/exporter/prometheus v0.4.0
 ## explicit; go 1.13
 contrib.go.opencensus.io/exporter/prometheus
-# contrib.go.opencensus.io/exporter/zipkin v0.1.2
-## explicit
-contrib.go.opencensus.io/exporter/zipkin
 # github.com/PuerkitoBio/purell v1.1.1
 ## explicit
 github.com/PuerkitoBio/purell
 # github.com/PuerkitoBio/urlesc v0.0.0-20170810143723-de5bf2ad4578
 ## explicit
 github.com/PuerkitoBio/urlesc
-# github.com/Yangfisher1/opencensus-go v0.0.0-20231120012905-202067ca7b1b
+# github.com/Yangfisher1/opencensus-go v0.0.0-20231124022950-942f7187f1f1
 ## explicit; go 1.13
 github.com/Yangfisher1/opencensus-go
 github.com/Yangfisher1/opencensus-go/internal
@@ -45,6 +42,9 @@ github.com/Yangfisher1/opencensus-go/trace
 github.com/Yangfisher1/opencensus-go/trace/internal
 github.com/Yangfisher1/opencensus-go/trace/propagation
 github.com/Yangfisher1/opencensus-go/trace/tracestate
+# github.com/Yangfisher1/opencensus-go-zipkin-exporter v0.0.0-20231124025851-0a41853d4607
+## explicit; go 1.21.3
+github.com/Yangfisher1/opencensus-go-zipkin-exporter
 # github.com/beorn7/perks v1.0.1
 ## explicit; go 1.11
 github.com/beorn7/perks/quantile
@@ -322,7 +322,6 @@ go.opencensus.io/metric/metricproducer
 go.opencensus.io/plugin/ocgrpc
 go.opencensus.io/plugin/ochttp
 go.opencensus.io/plugin/ochttp/propagation/b3
-go.opencensus.io/plugin/ochttp/propagation/tracecontext
 go.opencensus.io/resource
 go.opencensus.io/stats
 go.opencensus.io/stats/internal

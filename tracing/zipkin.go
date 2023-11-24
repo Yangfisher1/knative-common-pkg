@@ -17,7 +17,8 @@ limitations under the License.
 package tracing
 
 import (
-	"contrib.go.opencensus.io/exporter/zipkin"
+	// "contrib.go.opencensus.io/exporter/zipkin"
+	zipkin "github.com/Yangfisher1/opencensus-go-zipkin-exporter"
 	"github.com/Yangfisher1/opencensus-go/trace"
 	zipkinmodel "github.com/openzipkin/zipkin-go/model"
 	zipkinreporter "github.com/openzipkin/zipkin-go/reporter"

@@ -42,6 +42,8 @@ var (
 // endpoint, not sampling any request whose path is in pathsToIgnore.
 func HTTPSpanIgnoringPaths(pathsToIgnore ...string) func(http.Handler) http.Handler {
 	pathsToIgnoreSet := sets.NewString(pathsToIgnore...)
+	trace.GeneratedSpanCounter.Set(0)
+	trace.ReportedSpanCounter.Set(0)
 	return func(next http.Handler) http.Handler {
 		return &ochttp.Handler{
 			Handler: next,

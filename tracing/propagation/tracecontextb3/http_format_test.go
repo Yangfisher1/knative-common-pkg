@@ -20,11 +20,11 @@ import (
 	"net/http"
 	"testing"
 
+	"github.com/Yangfisher1/opencensus-go/plugin/ochttp/propagation/b3"
+	"github.com/Yangfisher1/opencensus-go/plugin/ochttp/propagation/tracecontext"
+	"github.com/Yangfisher1/opencensus-go/trace"
+	ocpropagation "github.com/Yangfisher1/opencensus-go/trace/propagation"
 	"github.com/google/go-cmp/cmp"
-	"go.opencensus.io/plugin/ochttp/propagation/b3"
-	"go.opencensus.io/plugin/ochttp/propagation/tracecontext"
-	"go.opencensus.io/trace"
-	ocpropagation "go.opencensus.io/trace/propagation"
 
 	_ "github.com/Yangfisher1/knative-common-pkg/metrics/testing"
 )

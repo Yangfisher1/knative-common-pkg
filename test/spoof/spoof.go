@@ -36,8 +36,8 @@ import (
 	"k8s.io/apimachinery/pkg/util/wait"
 	"k8s.io/client-go/kubernetes"
 
-	"go.opencensus.io/plugin/ochttp"
-	"go.opencensus.io/trace"
+	"github.com/Yangfisher1/opencensus-go/plugin/ochttp"
+	"github.com/Yangfisher1/opencensus-go/trace"
 )
 
 // Response is a stripped down subset of http.Response. The is primarily useful

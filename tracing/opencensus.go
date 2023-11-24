@@ -24,7 +24,8 @@ import (
 	"os"
 	"sync"
 
-	oczipkin "contrib.go.opencensus.io/exporter/zipkin"
+	// oczipkin "contrib.go.opencensus.io/exporter/zipkin"
+	oczipkin "github.com/Yangfisher1/opencensus-go-zipkin-exporter"
 	"github.com/Yangfisher1/opencensus-go/trace"
 	"github.com/openzipkin/zipkin-go"
 	httpreporter "github.com/openzipkin/zipkin-go/reporter/http"

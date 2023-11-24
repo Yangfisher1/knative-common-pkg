@@ -1,14 +1,14 @@
 module github.com/Yangfisher1/knative-common-pkg
 
-go 1.18
+go 1.21.3
 
 require (
 	cloud.google.com/go v0.98.0
 	cloud.google.com/go/storage v1.18.2
 	contrib.go.opencensus.io/exporter/ocagent v0.7.1-0.20200907061046-05415f1de66d
 	contrib.go.opencensus.io/exporter/prometheus v0.4.0
-	contrib.go.opencensus.io/exporter/zipkin v0.1.2
-	github.com/Yangfisher1/opencensus-go v0.0.0-20231120012905-202067ca7b1b
+	github.com/Yangfisher1/opencensus-go v0.0.0-20231124022950-942f7187f1f1
+	github.com/Yangfisher1/opencensus-go-zipkin-exporter v0.0.0-20231124025851-0a41853d4607
 	github.com/blang/semver/v4 v4.0.0
 	github.com/blendle/zapdriver v1.3.1
 	github.com/census-instrumentation/opencensus-proto v0.3.0
